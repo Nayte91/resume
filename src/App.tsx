@@ -1,9 +1,15 @@
 import React from 'react';
 
-function App() {
+import Home from "./pages/Home";
+import Knowledges from "./pages/Knowledges";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import NotFound from "./pages/NotFound";
+
+const App = () => {
     return (
         <div className="App">
-            <h1>Hello React</h1>
+            <h3>Hello React</h3>
         </div>
     );
 }
