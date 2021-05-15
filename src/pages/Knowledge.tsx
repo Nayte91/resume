@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from "../components/Navigation";
 
-const Knowledges = () => {
+const Knowledge = () => {
     return (
         <div>
             <Navigation />
-            Knowledges
+            Knowledge
         </div>
     );
 };
 
-export default Knowledges;
+export default Knowledge;
