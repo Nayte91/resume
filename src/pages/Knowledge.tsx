@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 
 const Knowledge = () => {
     return (
-        <div>
+        <div id="knowledge">
             <Navigation />
             Knowledge
         </div>

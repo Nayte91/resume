@@ -1,17 +1,17 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
     return (
         <div id="sidebar">
-            <div className="id">
-                <div className="id-content">
+            <div id="identity">
+                <div id="identity-content">
                     <img src="./media/billGates.jpg" alt="Profil picture"/>
                     <h3>Julien Robic</h3>
                 </div>
             </div>
 
-            <div className="navigation">
+            <div id="navigation">
                 <ul>
                     <li>
                         <NavLink exact to="/" activeClassName="navActive">
@@ -55,10 +55,10 @@ const Navigation = () => {
                         <a href="https://www.google.fr" target="_blank" rel="noopener"><i className="fab fa-codepen"></i></a>
                     </li>
                 </ul>
-            </div>
 
-            <div id="signature">
-                <p>Julien Robic - 2021</p>
+                <div id="signature">
+                    <p>Julien Robic - 2021</p>
+                </div>
             </div>
         </div>
     );

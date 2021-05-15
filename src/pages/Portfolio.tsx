@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 
 const Portfolio = () => {
     return (
-        <div>
+        <div id="portfolio">
             <Navigation />
             <p>Portfolio</p>
         </div>

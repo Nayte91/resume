@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 
 const Contact = () => {
     return (
-        <div>
+        <div id="contact">
             <Navigation />
             <h1>Hello Contact</h1>
         </div>
