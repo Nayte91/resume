@@ -8,7 +8,7 @@ const Home = () => {
             <div id="home-content">
                 <div className="content">
                     <h1>Julien Robic</h1>
-                    <h2>Développeur web</h2>
+                    <h2>Développeur web, spécialiste Symfony</h2>
                     <div id="pdf">
                         <a href="./media/CV.pdf">Téléchargez mon CV</a>
                     </div>
