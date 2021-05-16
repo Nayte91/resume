@@ -6,7 +6,7 @@ const Navigation = () => {
         <div id="sidebar">
             <div id="identity">
                 <div id="identity-content">
-                    <img src="./media/JR2.jpg" alt="Profil picture"/>
+                    <img src="./media/JR2.jpg" alt="Profile"/>
                     <h3>Julien Robic</h3>
                 </div>
             </div>
@@ -15,25 +15,25 @@ const Navigation = () => {
                 <ul>
                     <li>
                         <NavLink exact to="/" activeClassName="navActive">
-                            <i className="fas fa-home"></i>
+                            <i className="fas fa-home" />
                             <span>Accueil</span>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink exact to="/competences" activeClassName="navActive">
-                            <i className="fas fa-mountain"></i>
+                            <i className="fas fa-mountain" />
                             <span>Compétences</span>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink exact to="/portfolio" activeClassName="navActive">
-                            <i className="fas fa-images"></i>
+                            <i className="fas fa-images" />
                             <span>Portfolio</span>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink exact to="/contact" activeClassName="navActive">
-                            <i className="fas fa-address-book"></i>
+                            <i className="fas fa-address-book" />
                             <span>Contact</span>
                         </NavLink>
                     </li>
@@ -43,16 +43,24 @@ const Navigation = () => {
             <div id="social-networks">
                 <ul>
                     <li>
-                        <a href="https://www.google.fr" target="_blank" rel="noopener"><i className="fab fa-linkedin"></i></a>
+                        <a href="https://www.google.fr" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin" />
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.google.fr" target="_blank" rel="noopener"><i className="fab fa-github"></i></a>
+                        <a href="https://www.google.fr" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-github" />
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.google.fr" target="_blank" rel="noopener"><i className="fab fa-twitter"></i></a>
+                        <a href="https://www.google.fr" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-twitter" />
+                        </a>
                     </li>
                     <li>
-                        <a href="https://www.google.fr" target="_blank" rel="noopener"><i className="fab fa-codepen"></i></a>
+                        <a href="https://www.google.fr" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-codepen" />
+                        </a>
                     </li>
                 </ul>
 
