@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from "../components/Navigation";
 import Technologies from "../components/Knowledge/Technologies";
 import Experiences from "../components/Knowledge/Experiences";
-import Skills from "../components/Knowledge/Skills";
+import Miscellaneous from "../components/Knowledge/Miscellaneous";
 import Hobbies from "../components/Knowledge/Hobbies";
 
 const Knowledge = () => {
@@ -12,7 +12,7 @@ const Knowledge = () => {
             <div id="knowledge-content">
                 <Technologies />
                 <Experiences />
-                <Skills />
+                <Miscellaneous />
                 <Hobbies />
             </div>
         </div>
