@@ -13,7 +13,7 @@ class ProjectCard extends Component<Props> {
     handleInfo = () => this.setState({showInfo: !this.state.showInfo})
 
     render() {
-        let {name, languagesIcons, source, info, picture} = this.props.project;
+        let {name, languagesIcons, source, url, info, picture} = this.props.project;
         return (
             <div className="project">
                 <div className="project-icons">
@@ -30,6 +30,10 @@ class ProjectCard extends Component<Props> {
                         <div className="showInfo">
                             <div className="info-content">
                                 <div className="head">
+
+                                    <div>
+                                        <a href={url} rel="noopener noreferrer" className="button" target="_blank">Vers le site</a>
+                                    </div>
                                     <h2>{name}</h2>
                                     <div>
                                         <a href={source} rel="noopener noreferrer" className="button" target="_blank">Code source</a>

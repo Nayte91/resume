@@ -4,6 +4,7 @@ export type Project = {
     languages: Array<string>;
     languagesIcons: Array<string>;
     source: string;
+    url: string;
     info: string;
     picture: string;
 }
