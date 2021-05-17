@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from "../components/Navigation";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {networksData} from "../data/networksData";
 
 const Contact = () => {
     return (
@@ -41,18 +42,23 @@ const Contact = () => {
                 </div>
                 <div id="social-network">
                     <ul>
-                        <a href="https://www.linkedin.com/in/julien-robic-b6a895178/">
-                            <h4>LinkedIn</h4>
-                            <i className="fab fa-linkedin" />
-                        </a>
-                        <a href="https://github.com/Nayte91">
-                            <h4>Github</h4>
-                            <i className="fab fa-github" />
-                        </a>
-                        <a href="https://codepen.io/nayte91">
-                            <h4>CodePen</h4>
-                            <i className="fab fa-codepen" />
-                        </a>
+                        {networksData.map(network => {
+                            return (
+                                <a href={network.url} key={network.name}>
+                                    <h4>{network.name}</h4>
+                                    <i className={network.icon} />
+                                </a>
+                            );
+                        })}
+
+                        {/*<a href="https://github.com/Nayte91">*/}
+                        {/*    <h4>Github</h4>*/}
+                        {/*    <i className="fab fa-github" />*/}
+                        {/*</a>*/}
+                        {/*<a href="https://codepen.io/nayte91">*/}
+                        {/*    <h4>CodePen</h4>*/}
+                        {/*    <i className="fab fa-codepen" />*/}
+                        {/*</a>*/}
                     </ul>
                 </div>
             </div>

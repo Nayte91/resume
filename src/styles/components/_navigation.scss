@@ -81,7 +81,7 @@
     }
   }
 
-  #social-networks {
+  #social-networks-bubbles {
     grid-area: 3;
 
     ul {
@@ -137,7 +137,7 @@
     min-height: 50px;
     margin-bottom: .2rem;
 
-    #identity, #social-networks {
+    #identity, #social-networks-bubbles {
       display: none;
     }
 

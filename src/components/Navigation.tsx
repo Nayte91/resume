@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import {networksData} from "../data/networksData";
 
 const Navigation = () => {
     return (
@@ -40,28 +41,17 @@ const Navigation = () => {
                 </ul>
             </div>
 
-            <div id="social-networks">
+            <div id="social-networks-bubbles">
                 <ul>
-                    <li>
-                        <a href="https://www.google.fr" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.google.fr" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-github" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.google.fr" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-twitter" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.google.fr" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-codepen" />
-                        </a>
-                    </li>
+                    { networksData.map(network => {
+                        return(
+                            <li key={network.name}>
+                                <a href={network.url} target="_blank" rel="noopener noreferrer">
+                                    <i className={network.icon} />
+                                </a>
+                            </li>
+                        );
+                    }) }
                 </ul>
 
                 <div id="signature">
