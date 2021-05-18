@@ -2,7 +2,7 @@ export const portfolioData = [
   {
     id: 1,
     name: 'Ephemere',
-    languages: ['Javascript', 'Symfony', 'PHP', 'React'],
+    languages: ['Symfony', 'PHP'],
     languagesIcons: ['fab fa-php', 'fab fa-symfony', 'fab fa-css3-alt','fab fa-bootstrap', 'fab fa-js', 'fab fa-react'],
     source: 'https://github.com/Nayte91',
     url: 'http://ephemere.anagraph.org/',

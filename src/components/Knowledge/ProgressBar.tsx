@@ -2,7 +2,7 @@ import React from 'react';
 import {Skill} from "../../types/Skill";
 
 interface Props {
-    skills?: Array<Skill>;
+    skills: Array<Skill>;
     title: string;
     divId: string;
 }

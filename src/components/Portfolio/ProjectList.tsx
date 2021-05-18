@@ -2,7 +2,7 @@ import React, {Component, ChangeEvent} from 'react';
 import {portfolioData} from "../../data/portfolioData";
 import ProjectCard from "./ProjectCard";
 
-class ProjectList extends Component {
+class ProjectList extends Component<any, any> {
     state = {
         projects: portfolioData,
         radios: [

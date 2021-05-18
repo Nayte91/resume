@@ -1,4 +1,5 @@
 import React from 'react';
+import {miscellaneousFirst, miscellaneousSecond} from "../../data/miscellaneousData";
 
 const Miscellaneous = () => {
     return (
@@ -6,16 +7,10 @@ const Miscellaneous = () => {
             <h3>Autres compétences</h3>
             <div id="miscellaneous-list">
                 <ul>
-                    <li><i className="fas fa-check-square"><span>Linux</span></i></li>
-                    <li><i className="fas fa-check-square"><span>HTTP</span></i></li>
-                    <li><i className="fas fa-check-square"><span>REST</span></i></li>
-                    <li><i className="fas fa-check-square"><span>UML</span></i></li>
+                    { miscellaneousFirst.map(skill => { return <li><i className="fas fa-check-square"><span>{skill}</span></i></li> })}
                 </ul>
                 <ul>
-                    <li><i className="fas fa-check-square"><span>Docker</span></i></li>
-                    <li><i className="fas fa-check-square"><span>Git</span></i></li>
-                    <li><i className="fas fa-check-square"><span>Postman</span></i></li>
-                    <li><i className="fas fa-check-square"><span>Caddy Server</span></i></li>
+                    { miscellaneousSecond.map(skill => { return <li><i className="fas fa-check-square"><span>{skill}</span></i></li> })}
                 </ul>
             </div>
         </div>

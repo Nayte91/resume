@@ -5,7 +5,7 @@ interface Props {
     project: Project;
 }
 
-class ProjectCard extends Component<Props> {
+class ProjectCard extends Component<Props, any> {
     state = {
         showInfo: false
     }
