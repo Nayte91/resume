@@ -24,12 +24,12 @@ const ProgressBar: React.FC<Props> = ({ skills = [], title, divId}) => {
                         let progressBar = item.xp / xpYears * 100 + '%';
 
                         return (
-                            <div key={item.id} className="skill-list">
+                            <div key={item.id} className="skill">
                                 <li>{item.value}</li>
                                 <div
                                     className="progress-bar"
                                     style={{width:progressBar}}
-                                ></div>
+                                 />
                             </div>
                         )
                     })
