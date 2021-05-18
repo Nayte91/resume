@@ -30,7 +30,6 @@ class ProjectCard extends Component<Props> {
                         <div className="showInfo">
                             <div className="info-content">
                                 <div className="head">
-
                                     <div>
                                         <a href={url} rel="noopener noreferrer" className="button" target="_blank">Vers le site</a>
                                     </div>

@@ -12,7 +12,7 @@
       position: absolute;
       height: 100%;
       width: inherit;
-      background: url('../../media/bigGates.jpg') no-repeat center/cover;
+      background: url('../../media/big.jpg') no-repeat center/cover;
       z-index: -1;
       filter: brightness(30%);
     }
@@ -30,12 +30,14 @@
         text-transform: uppercase;
         text-shadow: 3px 6px 2px $black;
       }
+
       h2 {
         font-size: 2.5rem;
         padding: 1.5rem 0 7rem;
         color: $color-3;
         text-shadow: 1px 4px 1px $black;
       }
+
       #pdf {
         a {
           font-size: 1.5rem;
@@ -54,20 +56,22 @@
   }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
   #home-content {
     margin: 0 !important;
   }
 }
 
-@media screen and (max-width:580px){
+@media screen and (max-width: 580px) {
   #home-content {
     &:after {
-      background: url('../../media/bigGates.jpg') no-repeat 60% 50%/cover !important;
+      background: url('../../media/big.jpg') no-repeat 60% 50%/cover !important;
     }
+
     h1 {
       font-size: 3rem !important;
     }
+
     h2 {
       font-size: 1.8rem !important;
     }
