@@ -4,6 +4,7 @@ FROM node:${NODE_VERSION}-alpine as build
 WORKDIR /app
 COPY . ./
 RUN npm ci --only=production
+RUN npm i --save-dev @types/react-router-dom
 RUN npm run build
 
 FROM caddy:alpine as release
