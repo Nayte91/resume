@@ -20,9 +20,9 @@ class ProjectCard extends Component<Props, any> {
                     {languagesIcons.map(icon => <i className={icon} key={icon}/>)}
                 </div>
                 <h3>{name}</h3>
-                <img src={picture} alt={name} onClick={this.handleInfo}/>
+                <img src={picture} alt={name} onClick={this.handleInfo} />
                 <span className="project-info" onClick={this.handleInfo}>
-                <i className="fas fa-plus-circle" />
+                    <i className="fas fa-plus-circle" />
                 </span>
 
                 {
