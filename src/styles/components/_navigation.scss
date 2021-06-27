@@ -29,7 +29,8 @@
 
       img {
         border-radius: 50%;
-        box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
+        //box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
+        box-shadow: 0 0 0 4px $color-2;
       }
 
       h3 {
@@ -37,7 +38,7 @@
         text-transform: uppercase;
         letter-spacing: .2rem;
         margin-top: 1.5rem;
-        color: $color-5;
+        color: $color-2;
       }
     }
   }
@@ -60,7 +61,7 @@
         }
 
         a {
-          color: $color-5;
+          color: $color-2;
         }
 
         .navActive {
@@ -92,7 +93,7 @@
 
       li {
         font-size: 1.5rem;
-        background: $color-5;
+        background: $color-2;
         color: $color-1;
         border-radius: 50%;
         padding: .5rem 0.8rem;
@@ -122,7 +123,7 @@
       text-align: center;
       letter-spacing: 0.1rem;
       font-size: .7rem;
-      color: $color-5;
+      color: $color-2;
 
       &:hover {
         color: $color-4;

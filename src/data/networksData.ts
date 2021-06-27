@@ -1,6 +1,6 @@
 export const networksData = [
     {
-        name: 'linkedIn',
+        name: 'LinkedIn',
         icon: 'fab fa-linkedin',
         url: 'https://www.linkedin.com/in/julien-robic-b6a895178/'
     },

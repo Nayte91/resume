@@ -21,7 +21,7 @@
       font-size: 1.4rem;
       margin-bottom: 1rem;
       font-family: $font-2;
-      color: $color-5;
+      color: $color-1;
       text-transform: uppercase;
     }
 
@@ -128,11 +128,11 @@
 
       h4 {
         font-size: 1.1rem;
-        color: $color-5;
+        color: $color-1;
       }
 
       h5 {
-        color: $color-3;
+        color: $color-4;
         padding: 0.5rem 0 0.5rem 1rem;
       }
 
@@ -166,7 +166,7 @@
           display: grid;
 
           i {
-            color: $color-5;
+            color: $color-4;
 
             span {
               margin-left: 1rem;
@@ -187,7 +187,7 @@
         li {
           i {
             position: absolute;
-            color: $color-5;
+            color: $color-4;
           }
 
           span {
