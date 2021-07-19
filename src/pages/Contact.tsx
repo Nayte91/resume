@@ -15,7 +15,9 @@ const Contact = () => {
                     <ul>
                         <li>
                             <i className="fas fa-map-marked-alt" />
-                            <span>{contactData.city}</span>
+                            <a href="https://goo.gl/maps/4opcwbxwkchQLJJq9">
+                                <span className="clickInput">{ contactData.city }</span>
+                            </a>
                         </li>
                         <li>
                             <i className="fas fa-mobile-alt" />

@@ -1,6 +1,6 @@
 #home {
   #home-content {
-    background: linear-gradient(115deg, $color-1 50%, transparent 100%);
+    background: linear-gradient(115deg, $color-2 50%, transparent 100%);
     min-height: $minHeight;
     width: 100%;
     border-radius: $borderRadius;
@@ -12,7 +12,7 @@
       position: absolute;
       height: 100%;
       width: inherit;
-      background: url('../../media/big.jpg') no-repeat center/cover;
+      //background: url('../../media/big.jpg') no-repeat center/cover;
       z-index: -1;
       filter: brightness(30%);
     }
@@ -65,7 +65,7 @@
 @media screen and (max-width: 580px) {
   #home-content {
     &:after {
-      background: url('../../media/big.jpg') no-repeat 60% 50%/cover !important;
+      //background: url('../../media/big.jpg') no-repeat 60% 50%/cover !important;
     }
 
     h1 {

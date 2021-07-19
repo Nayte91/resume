@@ -1,18 +1,18 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import {networksData} from "../data/networksData";
+import { networksData } from "../data/networksData";
 
 const Navigation = () => {
     return (
-        <div id="sidebar">
-            <div id="identity">
-                <div id="identity-content">
+        <div className="sidebar">
+            <div className="identity">
+                <div className="identity-content">
                     <img src="./media/JR2.png" alt="Profile" width="160"/>
                     <h3>Julien Robic</h3>
                 </div>
             </div>
 
-            <div id="navigation">
+            <div className="navigation">
                 <ul>
                     <li>
                         <NavLink exact to="/" activeClassName="navActive">
@@ -41,20 +41,22 @@ const Navigation = () => {
                 </ul>
             </div>
 
-            <div id="social-networks-bubbles">
+            <div className="social-networks-bubbles">
                 <ul>
-                    { networksData.map(network => {
-                        return(
-                            <li key={network.name}>
-                                <a href={network.url} target="_blank" rel="noopener noreferrer">
-                                    <i className={network.icon} />
-                                </a>
-                            </li>
-                        );
-                    }) }
+                    {
+                        networksData.map(network => {
+                            return (
+                                <li key={network.name}>
+                                    <a href={network.url} target="_blank" rel="noopener noreferrer">
+                                        <i className={network.icon} />
+                                    </a>
+                                </li>
+                            );
+                        })
+                    }
                 </ul>
 
-                <div id="signature">
+                <div className="signature">
                     <p>Julien Robic - 2021</p>
                 </div>
             </div>
