@@ -10,7 +10,7 @@ const Home = () => {
                     <h1>Julien Robic</h1>
                     <h2>Développeur web, spécialiste Symfony</h2>
                     <div id="pdf">
-                        <a href="./media/CV.pdf">Téléchargez mon CV</a>
+                        <a href="./media/CV Julien Robic.pdf">Téléchargez mon CV</a>
                     </div>
                 </div>
             </div>
