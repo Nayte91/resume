@@ -1,7 +1,7 @@
 export const portfolioData = [
   {
     id: 1,
-    name: 'Ephemere',
+    name: 'Éphémère',
     languages: ['Symfony', 'PHP'],
     languagesIcons: ['fab fa-php', 'fab fa-symfony', 'fab fa-css3-alt', 'fab fa-bootstrap', 'fab fa-js', 'fab fa-react'],
     source: 'https://github.com/Nayte91',
@@ -11,7 +11,7 @@ export const portfolioData = [
   },
   {
     id: 2,
-    name: 'Chalets & Caviar',
+    name: 'Châlets & Caviar',
     languages: ['PHP'],
     languagesIcons: ['fab fa-wordpress', 'fab fa-php'],
     source: 'https://github.com/Nayte91/chalets',
