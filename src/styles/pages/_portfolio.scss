@@ -3,8 +3,9 @@
     background: url(../../media/background.jpg) no-repeat center top/cover;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr;
+    justify-content: center;
+    grid-template-columns: 95%;
+    grid-template-rows: 150px 1fr;
     grid-template-areas:
       "1"
       "2";
@@ -13,19 +14,18 @@
       grid-area: 1;
       display: flex;
       width: 100%;
-      padding: 1rem 2rem;
-      margin: 1rem auto;
+      margin: 2rem auto;
       background: $color-2;
-      user-select: none;
-
+      
       .selector__button {
           color: $color-1;
-          font-size: 1.1rem;
+          font-size: 1.5rem;
           font-weight: $bold;
           text-transform: uppercase;
           padding: 0 1rem;
           flex: 1;
           z-index: 2;
+          cursor: pointer;
           @include verticalCenter;
 
           input[type="radio"] {
@@ -42,7 +42,6 @@
                   width: .9rem;
                   border-radius: 50%;
                   border: 2px solid $color-3;
-                  cursor: pointer;
                   transition: 0.3s;
               }
 
@@ -55,35 +54,25 @@
                   height: .9rem;
                   width: .9rem;
                   border-radius: 50%;
-                  cursor: pointer;
                   transition: 0.3s;
                   background: $color-3;
                   transform: scale(0);
                   transform-origin: center;
               }
           }
+      }
 
-          input:checked:after {
-              transform: scale(1.17) translate(-25%, -25%);
-              top: 2px;
-              left: -6px;
-          }
-
-          input:checked + label {
-              background-color: $color-3;
-          }
-
-          label {
-              cursor: pointer;
-          }
+      .selector__button--selected {
+        background-color: $color-3;
       }
     }
 
-    #projects {
+    .portfolio__projects {
       grid-area: 2;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
     }
   }
 }
@@ -105,7 +94,7 @@
 }
 
 @media (max-width: 520px) {
-    #radio-display {
+    .portfolio__selector {
         display: none !important;
     }
     .portfolio__content {

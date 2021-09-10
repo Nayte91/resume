@@ -29,7 +29,7 @@ class ProjectList extends Component<any, any> {
                     {
                         radios.map( radio => {
                             return (
-                                <div className="selector__button" key={radio.id}>
+                                <div className={`selector__button${radio.value === selectedRadio ? " selector__button--selected": "" }`} key={ radio.id}>
                                     <input
                                         type="radio"
                                         name="radio"
@@ -45,11 +45,11 @@ class ProjectList extends Component<any, any> {
                     }
                 </nav>
 
-                <div id="projects">
+                <div className="portfolio__projects">
                     {
                         projects
                             .filter(project => project.languages.includes(selectedRadio))
-                            .map(project => {
+                            .map( project => {
                             return (
                                 <ProjectCard
                                     key={project.id}
