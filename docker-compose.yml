@@ -4,26 +4,32 @@ services:
   server:
     build:
       context: .
-      dockerfile: system/server/Dockerfile
+      dockerfile: system/Dockerfile
       args:
-        NODE_VERSION: 14
+        NODE_VERSION: 16
+        CADDY_VERSION: 2
     volumes:
-      - ./system/server/Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
       - caddy_config:/config
-    labels:
-      traefik.enable: true
-      traefik.http.routers.resume.rule: Host(`resume.anagraph.org`)
-# Uncomment below to earn web access to the project without Traefik
-#    ports:
-#      - 80:80
+###> Prod
+#    labels:
+#      traefik.http.routers.resume.rule: Host(`resume.anagraph.org`)
+#    networks:
+#      - proxy
+#      - default
+###< Prod
+###> Dev
+    ports:
+      - 80:80
+###< Dev
 
 volumes:
   caddy_data:
   caddy_config:
 
-# Uncomment below to link with Traefik
-networks:
-  default:
-    external:
-      name: proxy
+###> Prod
+# networks:
+#   default:
+#     external:
+#       name: proxy
+###< Prod

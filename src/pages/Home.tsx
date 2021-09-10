@@ -1,19 +1,18 @@
-import React from 'react';
 import Navigation from "../components/Navigation";
 
 const Home = () => {
     return (
-        <div id="home">
+        <div className="page__home">
             <Navigation />
-            <div id="home-content">
-                <div className="content">
-                    <h1>Julien Robic</h1>
-                    <h2>Développeur web, spécialiste Symfony</h2>
-                    <div id="pdf">
+            <main className="home__content">
+                <article className="home__splash">
+                    <h1>Développeur web</h1>
+                    <h2>spécialiste Symfony</h2>
+                    <div className="button__pdf">
                         <a href="./media/CV Julien Robic.pdf">Téléchargez mon CV</a>
                     </div>
-                </div>
-            </div>
+                </article>
+            </main>
         </div>
     );
 };

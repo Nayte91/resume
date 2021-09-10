@@ -1,4 +1,3 @@
-import React from 'react';
 import Navigation from "../components/Navigation";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {networksData} from "../data/networksData";
@@ -21,23 +20,23 @@ const Contact = () => {
                         </li>
                         <li>
                             <i className="fas fa-mobile-alt" />
-                            <CopyToClipboard text={contactData.phone}>
+                            <CopyToClipboard text={ contactData.phone }>
                                 <span
                                     className="clickInput"
                                     onClick={() => alert('téléphone copié !')}
                                 >
-                                    {contactData.phone}
+                                    { contactData.phone }
                                 </span>
                             </CopyToClipboard>
                         </li>
                         <li>
                             <i className="far fa-envelope" />
-                            <CopyToClipboard text={contactData.email}>
+                            <CopyToClipboard text={ contactData.email }>
                                 <span
                                     className="clickInput"
                                     onClick={() => alert('email copié !')}
                                 >
-                                    {contactData.email}
+                                    { contactData.email }
                                 </span>
                             </CopyToClipboard>
                         </li>
@@ -47,9 +46,9 @@ const Contact = () => {
                     <ul>
                         {networksData.map(network => {
                             return (
-                                <a href={network.url} key={network.name}>
-                                    <h4>{network.name}</h4>
-                                    <i className={network.icon} />
+                                <a href={ network.url } key={ network.name }>
+                                    <h4>{ network.name }</h4>
+                                    <i className={ network.icon } />
                                 </a>
                             );
                         })}

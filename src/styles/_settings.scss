@@ -1,66 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-$font-1: 'Nova Round', cursive;
-$font-2: 'Dosis', sans-serif;
-$font-3: 'Josefin Sans', serif;
+$light: 300;
+$regular: 400;
+$bold: 700;
 
-$color-1: #252525;
-$color-2: #f2f2f2;
-$color-3: #ffc000;
-$color-4: #949494;
-$color-5: #0000EE;
-$white: #fff;
-$black: #000;
+$color-1: hsl(0,0,27);
+$color-2: hsl(0,0,93);
+$color-3: hsl(45,100,50);
+$color-4: hsl(0,0,58);
 
 $borderRadius: 25px;
 $shadow: 0 1px 3px #333;
-$minHeight: 95vh;
+$minHeight: 1080px;
 
 @mixin verticalCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin: 1rem auto;
-  max-width: 1200px;
-  font-family: $font-1;
-  color: $black;
+    margin: 1rem auto;
+    max-width: 2000px;
+    min-height: 1080px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 cursor {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a, a:visited {
-  text-decoration: none;
-  color: $black;
-  cursor: pointer;
+    text-decoration: none;
+    color: $color-1;
+    cursor: pointer;
 }
 
-#home, #knowledge, #portfolio, #contact {
-  display: flex;
+.page__home, #knowledge, .page__portfolio, #contact {
+    display: flex;
 
-  @media screen and (max-width: 850px) {
-    display: block !important;
-  }
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
 }
 
-#home-content, #knowledge-content, #portfolio-content, #contact-content {
-  margin-left: .4rem;
-
-  @media screen and (max-width: 850px) {
-    margin-left: 0 !important;
-  }
+.home__content, #knowledge-content, .portfolio__content, #contact-content {
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;
+    }
 }

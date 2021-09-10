@@ -1,4 +1,3 @@
-import React from 'react';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home";
 import Knowledge from "./pages/Knowledge";
@@ -11,11 +10,11 @@ const App = () => {
         <>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route exact path="/competences" component={Knowledge}/>
-                    <Route exact path="/portfolio" component={Portfolio}/>
-                    <Route exact path="/contact" component={Contact}/>
-                    <Route component={NotFound}/>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/competences" component={Knowledge} />
+                    <Route exact path="/portfolio" component={Portfolio} />
+                    <Route exact path="/contact" component={Contact} />
+                    <Route component={NotFound} />
                 </Switch>
             </BrowserRouter>
         </>

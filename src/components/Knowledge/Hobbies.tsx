@@ -1,5 +1,4 @@
-import React from 'react';
-import {hobbiesData} from "../../data/hobbiesData";
+import { hobbiesData } from "../../data/hobbiesData";
 
 const Hobbies = () => {
     return (
@@ -9,8 +8,8 @@ const Hobbies = () => {
                 { hobbiesData.map(hobby => {
                     return(
                         <li className="hobby">
-                            <i className={hobby.icon} />
-                            <span>{hobby.name}</span>
+                            <i className={ hobby.icon } />
+                            <span>{ hobby.name }</span>
                         </li>
                     );
                 })}

@@ -1,5 +1,5 @@
-import React, {Component, ChangeEvent} from 'react';
-import {portfolioData} from "../../data/portfolioData";
+import { Component, ChangeEvent } from 'react';
+import { portfolioData } from "../../data/portfolioData";
 import ProjectCard from "./ProjectCard";
 
 class ProjectList extends Component<any, any> {
@@ -24,12 +24,12 @@ class ProjectList extends Component<any, any> {
         let {projects, radios, selectedRadio} = this.state;
 
         return (
-            <div id="portfolio-content">
-                <ul id="radio-display">
+            <main className="portfolio__content">
+                <nav className="portfolio__selector">
                     {
                         radios.map( radio => {
                             return (
-                                <li key={radio.id}>
+                                <div className="selector__button" key={radio.id}>
                                     <input
                                         type="radio"
                                         name="radio"
@@ -39,11 +39,11 @@ class ProjectList extends Component<any, any> {
                                         onChange={this.handleRadio}
                                     />
                                     <label htmlFor={radio.value}>{radio.value}</label>
-                                </li>
+                                </div>
                             );
                         })
                     }
-                </ul>
+                </nav>
 
                 <div id="projects">
                     {
@@ -59,7 +59,7 @@ class ProjectList extends Component<any, any> {
                         })
                     }
                 </div>
-            </div>
+            </main>
         );
     }
 }

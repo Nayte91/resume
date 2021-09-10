@@ -3,7 +3,7 @@ export const portfolioData = [
     id: 1,
     name: 'Ephemere',
     languages: ['Symfony', 'PHP'],
-    languagesIcons: ['fab fa-php', 'fab fa-symfony', 'fab fa-css3-alt','fab fa-bootstrap', 'fab fa-js', 'fab fa-react'],
+    languagesIcons: ['fab fa-php', 'fab fa-symfony', 'fab fa-css3-alt', 'fab fa-bootstrap', 'fab fa-js', 'fab fa-react'],
     source: 'https://github.com/Nayte91',
     url: 'http://ephemere.anagraph.org/',
     info: 'Projet personnel de gestion évènementielle. Fait avec toutes les technologies que je maîtrise !',
@@ -23,7 +23,7 @@ export const portfolioData = [
     id: 3,
     name: 'Les films de plein air',
     languages: ['Javascript'],
-    languagesIcons: ['fab fa-js','fab fa-bootstrap','fab fa-css3-alt', 'fab fa-html5'],
+    languagesIcons: ['fab fa-js', 'fab fa-bootstrap', 'fab fa-css3-alt', 'fab fa-html5'],
     source: 'https://github.com/Nayte91/FDPA',
     url: 'http://films.anagraph.org/',
     info: 'Projet 3 de ma formation OpenClassrooms "Développeur PHP/Symfony", maquette pour une association "les Films de Plein Air" à Paris, faite en HTML/CSS/Bootstrap 4.',
@@ -33,7 +33,7 @@ export const portfolioData = [
     id: 5,
     name: 'Blog homemade',
     languages: ['Javascript','PHP'],
-    languagesIcons: ['fab fa-php','fab fa-js','fab fa-css3-alt'],
+    languagesIcons: ['fab fa-php', 'fab fa-js', 'fab fa-css3-alt'],
     source: 'https://github.com/Nayte91/Blog',
     url: 'http://blog.anagraph.org/',
     info: 'Projet 5 de ma formation OpenClassrooms "Développeur PHP/Symfony", un blog personnel fait en PHP/POO. Design : Nicolas Ozoux. Back : PHP 8, MySQL 5.7. Front : HTML, CSS & Javascript. Système : Linux, Docker & Traefik 2.4. ',
@@ -88,5 +88,15 @@ export const portfolioData = [
     url: 'http://resume.anagraph.org',
     info: 'Ce site est fait en React v17, Typescript 4.1, SASS, Docker & Traefik 2.4.',
     picture: './media/p10.png'
+  },
+  {
+    id: 11,
+    name: 'Calculette back/front',
+    languages: ['Symfony','React'],
+    languagesIcons: ['fab fa-react', 'fab fa-symfony', 'fab fa-sass'],
+    source: 'https://github.com/Nayte91/Calculus',
+    url: 'http://calculus.anagraph.org',
+    info: 'Calculette dont le front est en React/TypeScript et le back en Symfony. Tout est dans le même repository grace à Webpack Encore.',
+    picture: './media/p11.png'
   },
 ]

@@ -1,18 +1,17 @@
-import React from 'react';
 import { NavLink } from "react-router-dom";
 import { networksData } from "../data/networksData";
 
 const Navigation = () => {
     return (
-        <div className="sidebar">
-            <div className="identity">
-                <div className="identity-content">
+        <aside className="sidebar">
+            <header className="identity">
+                <div className="identity__content">
                     <img src="./media/JR2.png" alt="Profile" width="160"/>
                     <h3>Julien Robic</h3>
                 </div>
-            </div>
+            </header>
 
-            <div className="navigation">
+            <nav className="navigation">
                 <ul>
                     <li>
                         <NavLink exact to="/" activeClassName="navActive">
@@ -39,16 +38,16 @@ const Navigation = () => {
                         </NavLink>
                     </li>
                 </ul>
-            </div>
+            </nav>
 
-            <div className="social-networks-bubbles">
+            <footer className="social-networks-bubbles">
                 <ul>
                     {
                         networksData.map(network => {
                             return (
-                                <li key={network.name}>
-                                    <a href={network.url} target="_blank" rel="noopener noreferrer">
-                                        <i className={network.icon} />
+                                <li key={ network.name }>
+                                    <a href={ network.url } target="_blank" rel="noopener noreferrer">
+                                        <i className={ network.icon } />
                                     </a>
                                 </li>
                             );
@@ -57,10 +56,10 @@ const Navigation = () => {
                 </ul>
 
                 <div className="signature">
-                    <p>Julien Robic - 2021</p>
+                    <p>Julien 'Nayte' Robic - 2021</p>
                 </div>
-            </div>
-        </div>
+            </footer>
+        </aside>
     );
 };
 

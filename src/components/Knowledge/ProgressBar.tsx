@@ -1,5 +1,5 @@
 import React from 'react';
-import {Skill} from "../../types/Skill";
+import { Skill } from "../../types/Skill";
 
 interface Props {
     skills: Array<Skill>;
@@ -24,8 +24,8 @@ const ProgressBar: React.FC<Props> = ({ skills = [], title, divId}) => {
                         let progressBar = item.xp / xpYears * 100 + '%';
 
                         return (
-                            <div key={item.id} className="skill">
-                                <li>{item.value}</li>
+                            <div key={ item.id } className="skill">
+                                <li>{ item.value }</li>
                                 <div
                                     className="progress-bar"
                                     style={{width:progressBar}}

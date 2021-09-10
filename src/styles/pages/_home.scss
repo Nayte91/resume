@@ -1,50 +1,38 @@
-#home {
-  #home-content {
-    background: linear-gradient(115deg, $color-2 50%, transparent 100%);
-    min-height: $minHeight;
+.page__home {
+  .home__content {
+    background: url(../../media/background.jpg) no-repeat center top/cover;
     width: 100%;
-    border-radius: $borderRadius;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &:after {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: inherit;
-      //background: url('../../media/big.jpg') no-repeat center/cover;
-      z-index: -1;
-      filter: brightness(30%);
-    }
-
-    .content {
-      position: absolute;
-      top: 20%;
-      left: 13%;
-      font-family: $font-1;
+    .home__splash {
+      display: grid;
+      place-items: center;
 
       h1 {
         font-size: 5rem;
-        font-family: $font-3;
+        font-weight: $light;
         color: $color-2;
-        text-transform: uppercase;
-        text-shadow: 3px 6px 2px $black;
       }
 
       h2 {
-        font-size: 2.5rem;
-        padding: 1.5rem 0 7rem;
-        color: $color-3;
-        text-shadow: 1px 4px 1px $black;
+        font-size: 3.5rem;
+        font-weight: $light;
+        color: $color-2;
+        margin: 1.5rem;
       }
 
-      #pdf {
+      .button__pdf {
+        margin-top: 5rem;
         a {
           font-size: 1.5rem;
-          background: $color-5;
-          padding: 1rem 2rem;
-          border-radius: $borderRadius;
-          box-shadow: 0 5px 1px rgb(15, 15, 15);
+          font-weight: $bold;
+          text-transform: uppercase;
+          background: $color-3;
+          padding: 1rem 3rem;
           transition: 0.2s ease;
 
           &:hover {
@@ -57,17 +45,13 @@
 }
 
 @media screen and (max-width: 850px) {
-  #home-content {
+  .home__content {
     margin: 0 !important;
   }
 }
 
 @media screen and (max-width: 580px) {
-  #home-content {
-    &:after {
-      //background: url('../../media/big.jpg') no-repeat 60% 50%/cover !important;
-    }
-
+  .home__content {
     h1 {
       font-size: 3rem !important;
     }

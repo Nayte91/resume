@@ -1,0 +1,119 @@
+.project {
+    background: $color-2;
+    margin: 1rem 0 0 0;
+    width: 32%;
+    max-height: 50%;
+    box-shadow: $shadow;
+    display: grid;
+    grid-template-rows: 1fr 1px 20% 60%;
+    grid-template-areas:
+        "title"
+        "break"
+        "icons"
+        "picture";
+
+    .project__icons {
+        grid-area: icons;
+        display: flex;
+        justify-content: center;
+        @include verticalCenter;
+    
+        i {
+            font-size: 2.5rem;
+            padding: 0 .35rem;
+            color: $color-1;
+        }
+    }
+    
+    .project__title {
+        grid-area: title;
+        font-size: 2rem;
+        font-weight: $light;
+        color: $color-1;
+        @include verticalCenter;
+    }
+
+    .project__break {
+        grid-area: break;
+        border: 0;
+        border-bottom: 1px solid $color-1;
+        width: 75%;
+        margin: auto;
+    }
+    
+    .project__picture {
+        grid-area: picture;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        @include verticalCenter;
+    }
+    
+    .showInfo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.507);
+        animation: popup .3s ease forwards;
+        transform-origin: center;
+    
+        .info-content {
+            position: relative;
+            top: 25%;
+            width: 600px;
+            margin: 0 auto;
+            color: $color-2;
+            background: $color-1;
+            border-radius: $borderRadius;
+            padding: 2rem;
+            box-shadow: 0 10px 10px #333;
+            animation: popup .6s ease forwards;
+            transform: scale(0);
+            transform-origin: center;
+    
+            @keyframes popup {
+                to {
+                    transform: scale(1);
+                }
+            }
+        }   
+    
+        .head {
+            display: flex;
+            justify-content: space-around;
+            margin: 1rem 0;
+        }
+    
+        h2 {
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+    
+        .button {
+            cursor: pointer;
+            color: $color-1;
+            background: $color-2;
+            border-radius: $borderRadius;
+            padding: 1rem;
+            transition: .2s;
+    
+            &:hover {
+                background: $color-4;
+            }
+        }
+    
+        .text {
+            text-align: justify;
+            padding-bottom: 1rem;
+        }
+    
+        .return {
+            margin: 1rem auto;
+            width: 200px;
+        }
+    }
+}
+

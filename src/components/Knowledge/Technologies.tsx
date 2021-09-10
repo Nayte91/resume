@@ -1,17 +1,16 @@
-import React from 'react';
 import ProgressBar from "./ProgressBar";
-import {frameworks, languages} from "../../data/technologiesData";
+import { frameworks, languages } from "../../data/technologiesData";
 
 const Technologies = () => {
         return (
             <div id="technologies">
                 <ProgressBar
-                    skills={languages}
+                    skills={ languages }
                     title="Langages"
                     divId="languages"
                 />
                 <ProgressBar
-                    skills={frameworks}
+                    skills={ frameworks }
                     title="Frameworks"
                     divId="frameworks"
                 />

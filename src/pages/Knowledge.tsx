@@ -1,4 +1,3 @@
-import React from 'react';
 import Navigation from "../components/Navigation";
 import Technologies from "../components/Knowledge/Technologies";
 import Experiences from "../components/Knowledge/Experiences";
