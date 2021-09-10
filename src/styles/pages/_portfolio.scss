@@ -28,37 +28,13 @@
           cursor: pointer;
           @include verticalCenter;
 
-          input[type="radio"] {
-              visibility: hidden;
+          button {
+              background: none;
+              color: inherit;
+              border: none;
+              font: inherit;
+              cursor: pointer;
               position: relative;
-
-              &:before {
-                  content: '';
-                  visibility: visible;
-                  position: absolute;
-                  top: -4px;
-                  left: -12px;
-                  height: .9rem;
-                  width: .9rem;
-                  border-radius: 50%;
-                  border: 2px solid $color-3;
-                  transition: 0.3s;
-              }
-
-              &:after {
-                  content: '';
-                  visibility: visible;
-                  position: absolute;
-                  top: -4px;
-                  left: -12px;
-                  height: .9rem;
-                  width: .9rem;
-                  border-radius: 50%;
-                  transition: 0.3s;
-                  background: $color-3;
-                  transform: scale(0);
-                  transform-origin: center;
-              }
           }
       }
 

@@ -1,67 +1,46 @@
-import { Component, ChangeEvent } from 'react';
+import { useState } from 'react';
 import { portfolioData } from "../../data/portfolioData";
 import ProjectCard from "./ProjectCard";
 
-class ProjectList extends Component<any, any> {
-    state = {
-        projects: portfolioData,
-        radios: [
-            {id: 1, value: "PHP"},
-            {id: 2, value: "Symfony"},
-            {id: 3, value: "Javascript"},
-            {id: 4, value: "React"}
-        ],
-        selectedRadio: "PHP"
-    };
+const ProjectList = () => {
+    const projects = portfolioData;
+    const [selectedTechnology, setTechnology] = useState('PHP');
+    const technologies = ['PHP', 'Symfony', 'Javascript', 'React'];
 
-    handleRadio = (event: ChangeEvent<HTMLInputElement>): void => {
-        let radio = event.target.value;
-        this.setState({selectedRadio: radio});
-        console.log()
-    };
+    return (
+        <main className="portfolio__content">
+            <nav className="portfolio__selector">
+                {
+                    technologies.map( technology => {
+                        return (
+                            <div 
+                                className={`selector__button${technology === selectedTechnology ? " selector__button--selected": "" }`} 
+                                key={ technology } 
+                                onClick={e => setTechnology(e.currentTarget.innerText)}
+                            >
+                                <button>{ technology }</button>
+                            </div>
+                        );
+                    })
+                }
+            </nav>
 
-    render() {
-        let {projects, radios, selectedRadio} = this.state;
-
-        return (
-            <main className="portfolio__content">
-                <nav className="portfolio__selector">
-                    {
-                        radios.map( radio => {
-                            return (
-                                <div className={`selector__button${radio.value === selectedRadio ? " selector__button--selected": "" }`} key={ radio.id}>
-                                    <input
-                                        type="radio"
-                                        name="radio"
-                                        checked={radio.value === selectedRadio}
-                                        value={radio.value}
-                                        id={radio.value}
-                                        onChange={this.handleRadio}
-                                    />
-                                    <label htmlFor={radio.value}>{radio.value}</label>
-                                </div>
-                            );
-                        })
-                    }
-                </nav>
-
-                <div className="portfolio__projects">
-                    {
-                        projects
-                            .filter(project => project.languages.includes(selectedRadio))
-                            .map( project => {
-                            return (
-                                <ProjectCard
-                                    key={project.id}
-                                    project={project}
-                                />
-                            );
-                        })
-                    }
-                </div>
-            </main>
-        );
-    }
+            <div className="portfolio__projects">
+                {
+                    projects
+                        .filter(project => project.languages.includes(selectedTechnology))
+                        .map( project => {
+                        return (
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                            />
+                        );
+                    })
+                }
+            </div>
+        </main>
+    );
 }
 
 export default ProjectList;
