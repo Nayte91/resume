@@ -3,7 +3,6 @@
     background: url(../../media/background.jpg) no-repeat center top/cover;
     width: 100%;
     display: grid;
-    min-height: $minHeight;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
     grid-template-areas:

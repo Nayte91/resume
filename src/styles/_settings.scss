@@ -7,7 +7,6 @@ $bold: 700;
 $color-1: hsl(0,0,27);
 $color-2: hsl(0,0,93);
 $color-3: hsl(45,100,50);
-$color-4: hsl(0,0,58);
 
 $borderRadius: 25px;
 $shadow: 0 1px 3px #333;
@@ -28,7 +27,7 @@ $minHeight: 1080px;
 body {
     margin: 1rem auto;
     max-width: 2000px;
-    min-height: 1080px;
+    min-height: $minHeight;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -46,7 +45,7 @@ a, a:visited {
     cursor: pointer;
 }
 
-.page__home, #knowledge, .page__portfolio, #contact {
+.page__home, #knowledge, .page__portfolio, .page__contact {
     display: flex;
 
     @media screen and (max-width: 850px) {
@@ -54,7 +53,7 @@ a, a:visited {
     }
 }
 
-.home__content, #knowledge-content, .portfolio__content, #contact-content {
+.home__content, #knowledge-content, .portfolio__content, .contact__content {
     @media screen and (max-width: 850px) {
         margin-left: 0 !important;
     }

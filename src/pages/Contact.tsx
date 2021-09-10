@@ -5,11 +5,11 @@ import {contactData} from "../data/contactData";
 
 const Contact = () => {
     return (
-        <div id="contact">
+        <div className="page__contact">
             <Navigation />
-            <div id="contact-content">
+            <main className="contact__content">
                 <div className="header"> </div>
-                <div id="contact-box">
+                <div className="contact__box">
                     <h1>Contactez-moi</h1>
                     <ul>
                         <li>
@@ -42,7 +42,7 @@ const Contact = () => {
                         </li>
                     </ul>
                 </div>
-                <div id="social-network">
+                <div className="contact__social-network">
                     <ul>
                         {networksData.map(network => {
                             return (
@@ -54,7 +54,7 @@ const Contact = () => {
                         })}
                     </ul>
                 </div>
-            </div>
+            </main>
         </div>
     );
 };
