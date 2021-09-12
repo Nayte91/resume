@@ -1,5 +1,5 @@
 .sidebar {
-  background: $color-1;
+  background: $grey;
   height: 100%;
   min-height: $minHeight;
   width: 400px;
@@ -17,7 +17,7 @@
     text-align: center;
     user-select: none;
     position: relative;
-    background: $color-2;
+    background: $white;
 
     .identity__content {
       position: absolute;
@@ -28,7 +28,7 @@
 
       img {
         border-radius: 50%;
-        box-shadow: 0 0 0 4px $color-2;
+        box-shadow: 0 0 0 4px $white;
       }
 
       h3 {
@@ -36,7 +36,7 @@
         margin-bottom: 1.5rem;
         font-size: 2.3rem;
         font-weight: $light;
-        color: $color-1;
+        color: $grey;
       }
     }
   }
@@ -57,14 +57,14 @@
         }
 
         a {
-          color: $color-2;
+          color: $white;
           display: block;
           padding: 1rem;
         }
 
         .navActive {
-          background: $color-3;
-          color: $color-1;
+          background: $yellow;
+          color: $grey;
         }
 
         i {
@@ -92,15 +92,15 @@
 
       li {
         font-size: 1.5rem;
-        background: $color-2;
-        color: $color-1;
+        background: $white;
+        color: $grey;
         border-radius: 50%;
         padding: .5rem 0.8rem;
         transition: .3s;
         cursor: pointer;
 
         a:visited {
-          color: $color-1;
+          color: $grey;
         }
 
         &:nth-child(1) {
@@ -118,7 +118,7 @@
       text-align: center;
       letter-spacing: 0.1rem;
       font-size: .7rem;
-      color: $color-2;
+      color: $white;
     }
   }
 }

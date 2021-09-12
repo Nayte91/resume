@@ -12,14 +12,14 @@
       "MISC MISC HOBBIES";
 
     #technologies, #experiences, #miscellaneous, #hobbies {
-        background: $color-2;
+        background: $white;
         padding: .8rem;
     }
 
     h3 {
         font-size: 1.4rem;
         margin-bottom: 1rem;
-        color: $color-1;
+        color: $grey;
         text-transform: uppercase;
     }
 
@@ -49,7 +49,7 @@
         font-size: .65rem;
         display: flex;
         justify-content: space-between;
-        color: $color-2;
+        color: $white;
 
         span {
           width: 36%;
@@ -80,7 +80,7 @@
         padding-top: .5rem;
 
         li {
-          color: $color-1;
+          color: $grey;
         }
 
         .progress-bar {
@@ -93,7 +93,7 @@
           &:after {
             content: '';
             position: absolute;
-            background: $color-3;
+            background: $yellow;
             border-radius: 50px;
             height: .4rem;
             width: 0;
@@ -126,11 +126,11 @@
 
       h4 {
         font-size: 1.1rem;
-        color: $color-1;
+        color: $grey;
       }
 
       h5 {
-        color: $color-1;
+        color: $grey;
         padding: 0.5rem 0 0.5rem 1rem;
       }
 
@@ -164,7 +164,7 @@
           display: grid;
 
           i {
-            color: $color-1;
+            color: $grey;
 
             span {
               margin-left: 1rem;
@@ -185,7 +185,7 @@
         li {
           i {
             position: absolute;
-            color: $color-1;
+            color: $grey;
           }
 
           span {

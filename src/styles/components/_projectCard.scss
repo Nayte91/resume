@@ -1,5 +1,5 @@
 .project {
-    background: $color-2;
+    background: $white;
     margin: 1rem 0 0 0;
     width: 32%;
     max-height: 50%;
@@ -21,7 +21,7 @@
         i {
             font-size: 2.5rem;
             padding: 0 .35rem;
-            color: $color-1;
+            color: $grey;
         }
     }
     
@@ -29,14 +29,14 @@
         grid-area: title;
         font-size: 2rem;
         font-weight: $light;
-        color: $color-1;
+        color: $grey;
         @include verticalCenter;
     }
 
     .project__break {
         grid-area: break;
         border: 0;
-        border-bottom: 1px solid $color-1;
+        border-bottom: 1px solid $grey;
         width: 75%;
         margin: auto;
     }
@@ -65,8 +65,8 @@
             top: 25%;
             width: 600px;
             margin: 0 auto;
-            color: $color-2;
-            background: $color-1;
+            color: $white;
+            background: $grey;
             padding: 2rem;
             box-shadow: 0 10px 10px #333;
             animation: popup .6s ease forwards;
@@ -93,8 +93,8 @@
     
         .button {
             cursor: pointer;
-            color: $color-1;
-            background: $color-2;
+            color: $grey;
+            background: $white;
             padding: 1rem;
             transition: .2s;
         }

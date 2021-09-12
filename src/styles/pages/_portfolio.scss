@@ -15,10 +15,10 @@
       display: flex;
       width: 100%;
       margin: 2rem auto;
-      background: $color-2;
+      background: $white;
       
       .selector__button {
-          color: $color-1;
+          color: $grey;
           font-size: 1.5rem;
           font-weight: $bold;
           text-transform: uppercase;
@@ -39,7 +39,7 @@
       }
 
       .selector__button--selected {
-        background-color: $color-3;
+        background-color: $yellow;
       }
     }
 
