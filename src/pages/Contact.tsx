@@ -21,10 +21,7 @@ const Contact = () => {
                         <li>
                             <i className="fas fa-mobile-alt" />
                             <CopyToClipboard text={ contactData.phone }>
-                                <span
-                                    className="clickInput"
-                                    onClick={() => alert('téléphone copié !')}
-                                >
+                                <span className="clickInput" onClick={() => alert('téléphone copié !')}>
                                     { contactData.phone }
                                 </span>
                             </CopyToClipboard>
@@ -32,27 +29,26 @@ const Contact = () => {
                         <li>
                             <i className="far fa-envelope" />
                             <CopyToClipboard text={ contactData.email }>
-                                <span
-                                    className="clickInput"
-                                    onClick={() => alert('email copié !')}
-                                >
+                                <span className="clickInput" onClick={() => alert('email copié !')}>
                                     { contactData.email }
                                 </span>
                             </CopyToClipboard>
                         </li>
                     </ul>
                 </div>
-                <div className="contact__social-network">
-                    <ul>
-                        {networksData.map(network => {
+                <div className="contact__social-networks">
+                    {
+                        networksData.map( network => {
                             return (
-                                <a href={ network.url } key={ network.name }>
-                                    <h4>{ network.name }</h4>
-                                    <i className={ network.icon } />
-                                </a>
+                                <div className="social-network__card">
+                                    <a href={ network.url } key={ network.name }>
+                                        <h4>{ network.name }</h4>
+                                        <i className={ network.icon } />
+                                    </a>
+                                </div>
                             );
-                        })}
-                    </ul>
+                        })
+                    }
                 </div>
             </main>
         </div>

@@ -1,10 +1,6 @@
 .page__home {
   .home__content {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
 
     .home__splash {
       display: grid;

@@ -1,20 +1,18 @@
 .page__contact {
-    .contact__content {
+    .contact__content { 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 45% 35%;
+        grid-template-rows: 45% 35%;
         grid-template-areas:
-          "1"
-          "2"
-          "3";
+          "contact"
+          "networks";
 
       .contact__box {
-        grid-area: 2;
+        grid-area: contact;
         background: $white;
         margin: 0 auto;
         padding: 1rem 3rem;
         z-index: 2;
-        box-shadow: 0 3px 10px #333;
         width: 50%;
         min-width: 440px;
         min-height: 200px;
@@ -72,29 +70,30 @@
         }
       }
 
-      .contact__social-network {
-        grid-area: 3;
-        @include verticalCenter;
-
-        ul {
+      .contact__social-networks {
+          grid-area: networks;  
           display: flex;
-          text-align: center;
-          width: 100%;
-          justify-content: space-evenly;
+          justify-content: space-between;
+          align-items: center; 
+          margin: 0 auto;
+          width: 50%;
+          
+          .social-network__card {
+              @include flexCenter;
+              width: 160px;
+              height: 100px;
+              background: $yellow;
+              text-align: center;
+              transform: scaleY(0);
+              transform-origin: center;
 
-          a {
-            width: 20%;
-            font-size: 1.2rem;
-            background: $yellow;
-            display: inline-block;
-            padding: 0.7rem 0;
-            transform: scaleY(0);
-            transform-origin: center;
+              a {
+                  font-size: 1.2rem;
 
-            i {
-              color: $grey;
-              margin-top: .3rem;
-            }
+                  i {
+                    color: $grey;
+                  }
+              }
           }
 
           //ANIMATION
@@ -109,22 +108,21 @@
             }
           }
 
-          a:nth-child(1) {
+          .social-network__card:nth-child(1) {
             @include networkAnim(.4s);
           }
 
-          a:nth-child(2) {
+          .social-network__card:nth-child(2) {
             @include networkAnim(.8s);
           }
 
-          a:nth-child(3) {
+          .social-network__card:nth-child(3) {
             @include networkAnim(1.2s);
           }
 
-          a:nth-child(4) {
+          .social-network__card:nth-child(4) {
             @include networkAnim(1.6s);
           }
-        }
       }
     }
 

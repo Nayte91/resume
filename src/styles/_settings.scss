@@ -12,7 +12,7 @@ $yellow-light: hsla(45,100,60,1);
 
 $minHeight: 1080px;
 
-@mixin verticalCenter {
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;

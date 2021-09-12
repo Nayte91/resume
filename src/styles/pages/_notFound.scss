@@ -1,6 +1,6 @@
 .page__notfound {
     .notfound__content {
-        @include verticalCenter;
+        @include flexCenter;
         height: 95vh;
         text-align: center;
 

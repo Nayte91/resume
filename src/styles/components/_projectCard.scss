@@ -12,10 +12,8 @@
         "picture";
 
     .project__icons {
-        grid-area: icons;
-        display: flex;
-        justify-content: center;
-        @include verticalCenter;
+        @include flexCenter;
+        grid-area: icons;  
     
         i {
             font-size: 2.5rem;
@@ -25,11 +23,11 @@
     }
     
     .project__title {
+        @include flexCenter;
         grid-area: title;
         font-size: 2rem;
         font-weight: $light;
         color: $grey;
-        @include verticalCenter;
     }
 
     .project__break {
@@ -41,12 +39,12 @@
     }
     
     .project__picture {
+        @include flexCenter;
         grid-area: picture;
         object-fit: cover;
         width: 100%;
         height: 100%;
         cursor: pointer;
-        @include verticalCenter;
     }
     
     .showInfo {
