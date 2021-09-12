@@ -2,8 +2,6 @@
     .notfound__content {
         @include verticalCenter;
         height: 95vh;
-        max-width: 1200px;
-        background: $yellow;
         text-align: center;
 
         h3 {

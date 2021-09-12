@@ -10,7 +10,6 @@ $white: hsla(0,0,90,1);
 $yellow: hsla(45,100,50,1);
 $yellow-light: hsla(45,100,60,1);
 
-$shadow: 0 1px 3px #333;
 $minHeight: 1080px;
 
 @mixin verticalCenter {
@@ -20,6 +19,7 @@ $minHeight: 1080px;
 }
 
 * {
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -29,7 +29,6 @@ body {
     margin: 1rem auto;
     max-width: 2000px;
     min-height: $minHeight;
-    font-family: 'Open Sans', sans-serif;
 }
 
 cursor {
@@ -55,6 +54,7 @@ a, a:visited {
 
 .home__content, .knowledge__content, .portfolio__content, .contact__content, .notfoud__content {
     background: url(../media/background.jpg) no-repeat center top/cover !important;
+    width: 100%;
     @media screen and (max-width: 850px) {
         margin-left: 0 !important;
         
