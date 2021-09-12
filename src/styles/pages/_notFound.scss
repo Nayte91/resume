@@ -1,21 +1,23 @@
-#not-found {
-    @include verticalCenter;
-    height: 95vh;
-    max-width: 1200px;
-    background: $yellow;
-    text-align: center;
+.page__notfound {
+    .notfound__content {
+        @include verticalCenter;
+        height: 95vh;
+        max-width: 1200px;
+        background: $yellow;
+        text-align: center;
 
-    h3 {
-        margin-bottom: 3rem;
-        font-size: 2rem;
-    }
-    
-    a {
-        padding: 1rem 2rem;
-        background: $white;
-        transition: .2s;
-        span {
-            padding-left: .5rem;
+        h3 {
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+        
+        a {
+            padding: 1rem 2rem;
+            background: $white;
+            transition: .2s;
+            span {
+                padding-left: .5rem;
+            }
         }
     }
 }

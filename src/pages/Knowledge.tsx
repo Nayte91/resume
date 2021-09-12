@@ -6,9 +6,9 @@ import Hobbies from "../components/Knowledge/Hobbies";
 
 const Knowledge = () => {
     return (
-        <div id="knowledge">
+        <div className="page__knowledge">
             <Navigation />
-            <div id="knowledge-content">
+            <div className="knowledge__content">
                 <Technologies />
                 <Experiences />
                 <Miscellaneous />
