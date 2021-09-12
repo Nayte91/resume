@@ -67,7 +67,6 @@
             margin: 0 auto;
             color: $color-2;
             background: $color-1;
-            border-radius: $borderRadius;
             padding: 2rem;
             box-shadow: 0 10px 10px #333;
             animation: popup .6s ease forwards;
@@ -96,7 +95,6 @@
             cursor: pointer;
             color: $color-1;
             background: $color-2;
-            border-radius: $borderRadius;
             padding: 1rem;
             transition: .2s;
         }

@@ -12,17 +12,15 @@
       "MISC MISC HOBBIES";
 
     #technologies, #experiences, #miscellaneous, #hobbies {
-      background: $color-2;
-      border-radius: $borderRadius;
-      padding: .8rem;
+        background: $color-2;
+        padding: .8rem;
     }
 
     h3 {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-      // font-family: $font-2;
-      color: $color-1;
-      text-transform: uppercase;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        color: $color-1;
+        text-transform: uppercase;
     }
 
     #technologies {

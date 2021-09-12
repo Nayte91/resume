@@ -42,7 +42,6 @@
         margin: 0 auto;
         padding: 1rem 3rem;
         z-index: 2;
-        border-radius: $borderRadius;
         box-shadow: 0 3px 10px #333;
         width: 50%;
         min-width: 440px;
@@ -115,7 +114,6 @@
             width: 20%;
             font-size: 1.2rem;
             background: $color-3;
-            border-radius: $borderRadius;
             display: inline-block;
             padding: 0.7rem 0;
             box-shadow: $shadow;
