@@ -51,6 +51,7 @@
       li {
         font-size: 1.3rem;
         position: relative;
+        transition: 0.2s ease;
 
         &:hover i {
           transform: translate(3px, 3px);
@@ -62,9 +63,18 @@
           padding: 1rem;
         }
 
+        &:hover {
+          background: $grey-light;
+        }
+
         .navActive {
           background: $yellow;
           color: $grey;
+          transition: 0.2s ease;
+          
+          &:hover {
+            background: $yellow-light;
+          }
         }
 
         i {
