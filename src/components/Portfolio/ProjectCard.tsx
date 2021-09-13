@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import { Project } from "../../types/Project";
+import { Component } from 'react'
+import { Project } from "../../types/Project"
 
 interface Props {
     project: Project;
@@ -48,4 +48,4 @@ class ProjectCard extends Component<Props, any> {
     }
 }
 
-export default ProjectCard;
+export default ProjectCard

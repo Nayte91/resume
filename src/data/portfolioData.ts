@@ -1,4 +1,4 @@
-export const portfolioData = [
+const portfolioData = [
   {
     id: 1,
     name: 'Éphémère',
@@ -100,3 +100,5 @@ export const portfolioData = [
     picture: './media/p11.png'
   },
 ]
+
+export default portfolioData

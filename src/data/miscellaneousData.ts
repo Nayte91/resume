@@ -3,11 +3,11 @@ export const miscellaneousFirst = [
     "HTTP",
     "REST",
     "UML",
-];
+]
 
 export const miscellaneousSecond = [
     "Docker",
     "git",
     "Postman",
     "Caddy server"
-];
+]

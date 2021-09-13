@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { networksData } from "../data/networksData";
+import networksData from "../data/networksData";
 
 const Navigation = () => {
     return (

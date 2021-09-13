@@ -1,7 +1,7 @@
-import Navigation from "../components/Navigation";
-import {CopyToClipboard} from 'react-copy-to-clipboard';
-import {networksData} from "../data/networksData";
-import {contactData} from "../data/contactData";
+import Navigation from "../components/Navigation"
+import {CopyToClipboard} from "react-copy-to-clipboard"
+import networksData from "../data/networksData"
+import contactData from "../data/contactData"
 
 const Contact = () => {
     return (
@@ -52,7 +52,7 @@ const Contact = () => {
                 </div>
             </main>
         </div>
-    );
-};
+    )
+}
 
-export default Contact;
+export default Contact

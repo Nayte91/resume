@@ -1,4 +1,4 @@
-import { miscellaneousFirst, miscellaneousSecond } from "../../data/miscellaneousData";
+import { miscellaneousFirst, miscellaneousSecond } from "../../data/miscellaneousData"
 
 const Miscellaneous = () => {
     return (
@@ -13,7 +13,7 @@ const Miscellaneous = () => {
                 </ul>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Miscellaneous;
+export default Miscellaneous

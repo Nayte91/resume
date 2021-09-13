@@ -1,4 +1,4 @@
-import { experiencesData } from "../../data/experiencesData";
+import experiencesData from "../../data/experiencesData"
 
 const Experiences = () => {
     return (
@@ -12,7 +12,7 @@ const Experiences = () => {
                 </div>);
             })}
         </div>
-    );
-};
+    )
+}
 
-export default Experiences;
+export default Experiences

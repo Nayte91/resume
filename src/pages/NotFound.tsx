@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
 
 const NotFound = () => {
     return (
@@ -10,7 +10,7 @@ const NotFound = () => {
                 </NavLink>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default NotFound;
+export default NotFound

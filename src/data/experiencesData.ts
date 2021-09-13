@@ -1,4 +1,4 @@
-export const experiencesData = [
+const experiencesData = [
     {
         title: "Diplôme Développeur web PHP/Symfony",
         date: "2019 - 2021",
@@ -9,4 +9,6 @@ export const experiencesData = [
         date: "2010 - 2021",
         description: "toto"
     }
-];
+]
+
+export default experiencesData

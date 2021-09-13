@@ -1,5 +1,5 @@
-import React from 'react';
-import { Skill } from "../../types/Skill";
+import React from 'react'
+import { Skill } from "../../types/Skill"
 
 interface Props {
     skills: Array<Skill>;
@@ -36,7 +36,7 @@ const ProgressBar: React.FC<Props> = ({ skills = [], title, divId}) => {
                 }
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default ProgressBar;
+export default ProgressBar

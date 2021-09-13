@@ -1,13 +1,15 @@
-import Navigation from "../components/Navigation";
-import ProjectList from "../components/Portfolio/ProjectList";
+import Navigation from "../components/Navigation"
+import ProjectList from "../components/Portfolio/ProjectList"
 
 const Portfolio = () => {
     return (
         <div className="page__portfolio">
             <Navigation />
-            <ProjectList />
+            <main className="portfolio__content">
+                <ProjectList />
+            </main>
         </div>
-    );
-};
+    )
+}
 
-export default Portfolio;
+export default Portfolio

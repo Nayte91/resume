@@ -1,4 +1,4 @@
-export const hobbiesData = [
+const hobbiesData = [
     {
         icon: "fas fa-running",
         name: "Arts martiaux",
@@ -19,4 +19,6 @@ export const hobbiesData = [
         icon: "fas fa-dog",
         name: "Animaux",
     },
-];
+]
+
+export default hobbiesData

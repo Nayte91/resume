@@ -1,36 +1,6 @@
 .page__home {
   .home__content {
     @include flexCenter;
-
-    .home__splash {
-      display: grid;
-      place-items: center;
-
-      h1 {
-        font-size: 5rem;
-        font-weight: $light;
-        color: $white;
-      }
-
-      h2 {
-        font-size: 3.5rem;
-        font-weight: $light;
-        color: $white;
-        margin: 1.5rem;
-      }
-
-      .button__pdf {
-        margin-top: 5rem;
-        a {
-          font-size: 1.5rem;
-          font-weight: $bold;
-          text-transform: uppercase;
-          background: $yellow;
-          padding: 1rem 3rem;
-          transition: 0.2s ease;
-        }
-      }
-    }
   }
 }
 

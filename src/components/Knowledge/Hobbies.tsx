@@ -1,4 +1,4 @@
-import { hobbiesData } from "../../data/hobbiesData";
+import hobbiesData from "../../data/hobbiesData"
 
 const Hobbies = () => {
     return (
@@ -15,7 +15,7 @@ const Hobbies = () => {
                 })}
             </ul>
         </div>
-    );
-};
+    )
+}
 
-export default Hobbies;
+export default Hobbies

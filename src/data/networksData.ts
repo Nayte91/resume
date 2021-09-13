@@ -1,4 +1,4 @@
-export const networksData = [
+const networksData = [
     {
         name: 'LinkedIn',
         icon: 'fab fa-linkedin',
@@ -15,3 +15,5 @@ export const networksData = [
         url: 'https://codepen.io/nayte91'
     }
 ]
+
+export default networksData

@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { portfolioData } from "../../data/portfolioData";
-import ProjectCard from "./ProjectCard";
+import { useState } from 'react'
+import portfolioData from "../../data/portfolioData"
+import ProjectCard from "./ProjectCard"
 
 const ProjectList = () => {
     const projects = portfolioData;
@@ -8,7 +8,7 @@ const ProjectList = () => {
     const technologies = ['PHP', 'Symfony', 'Javascript', 'React'];
 
     return (
-        <main className="portfolio__content">
+        <>
             <nav className="portfolio__selector">
                 {
                     technologies.map( technology => {
@@ -39,8 +39,8 @@ const ProjectList = () => {
                     })
                 }
             </div>
-        </main>
-    );
+        </>
+    )
 }
 
-export default ProjectList;
+export default ProjectList

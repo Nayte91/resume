@@ -1,5 +1,5 @@
-import ProgressBar from "./ProgressBar";
-import { frameworks, languages } from "../../data/technologiesData";
+import ProgressBar from "./ProgressBar"
+import { frameworks, languages } from "../../data/technologiesData"
 
 const Technologies = () => {
         return (
@@ -15,7 +15,7 @@ const Technologies = () => {
                     divId="frameworks"
                 />
             </div>
-        );
+        )
 }
 
-export default Technologies;
+export default Technologies
