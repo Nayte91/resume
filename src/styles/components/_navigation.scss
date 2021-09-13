@@ -8,12 +8,12 @@
   grid-template-columns: 1fr;
   grid-template-rows: 300px 1fr 100px;
   grid-template-areas:
-    "1"
-    "2"
-    "3";
+    "identity"
+    "navigation"
+    "bubbles";
 
   .identity {
-    grid-area: 1;
+    grid-area: identity;
     text-align: center;
     user-select: none;
     position: relative;
@@ -42,7 +42,7 @@
   }
 
   .navigation {
-    grid-area: 2; 
+    grid-area: navigation; 
 
     ul {
       display: grid;
@@ -92,7 +92,7 @@
   }
 
   .social-networks-bubbles {
-    grid-area: 3;
+    grid-area: bubbles;
 
     ul {
       display: flex;
@@ -108,9 +108,10 @@
         padding: .5rem 0.8rem;
         transition: .3s;
         cursor: pointer;
+        transition: 0.2s ease;
 
-        a:visited {
-          color: $grey;
+        &:hover {
+          background: $white-light;
         }
 
         &:nth-child(1) {

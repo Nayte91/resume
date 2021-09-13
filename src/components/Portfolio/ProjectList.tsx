@@ -10,33 +10,26 @@ const ProjectList = () => {
     return (
         <>
             <nav className="portfolio__selector">
-                {
-                    technologies.map( technology => {
-                        return (
-                            <div 
-                                className={`selector__button${technology === selectedTechnology ? " selector__button--selected": "" }`} 
-                                key={ technology } 
-                                onClick={e => setTechnology(e.currentTarget.innerText)}
-                            >
-                                <button>{ technology }</button>
-                            </div>
-                        );
-                    })
-                }
+                { technologies.map( technology => { return (
+                    <div 
+                        className={`selector__button${technology === selectedTechnology ? " selector__button--selected": "" }`} 
+                        key={ technology } 
+                        onClick={e => setTechnology(e.currentTarget.innerText)}
+                    >
+                        <button>{ technology }</button>
+                    </div>
+                )})}
             </nav>
 
             <div className="portfolio__projects">
-                {
-                    projects
-                        .filter(project => project.languages.includes(selectedTechnology))
-                        .map( project => {
-                        return (
-                            <ProjectCard
-                                key={project.id}
-                                project={project}
-                            />
-                        );
-                    })
+                { projects
+                    .filter(project => project.languages.includes(selectedTechnology))
+                    .map( project => { return (
+                        <ProjectCard
+                            key={project.id}
+                            project={project}
+                        />
+                    )})
                 }
             </div>
         </>
