@@ -2,5 +2,16 @@
     grid-area: biography;
     background: $white;
     margin: 0 auto;
-    padding: 1rem 3rem;
+    padding: 1rem;
+
+    h1 {
+        text-align: center;
+        margin-top: 0.3rem;
+        position: relative;
+        color: $grey;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
 }
