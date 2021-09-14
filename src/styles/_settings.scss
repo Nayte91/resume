@@ -46,14 +46,14 @@ a, a:visited {
     cursor: pointer;
 }
 
-.page__home, .page__knowledge, .page__portfolio, .page__contact, .page__notfoud {
+.page__home, .page__knowledge, .page__portfolio, .page__about, .page__notfoud {
     display: flex;
     @media screen and (max-width: 850px) {
         display: block !important;
     }
 }
 
-.home__content, .knowledge__content, .portfolio__content, .contact__content, .notfoud__content {
+.home__content, .knowledge__content, .portfolio__content, .about__content, .notfoud__content {
     background: url(../media/background.jpg) no-repeat center top/cover !important;
     width: 100%;
     @media screen and (max-width: 850px) {

@@ -32,9 +32,9 @@ const Navigation = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/contact" activeClassName="navActive">
+                        <NavLink exact to="/about" activeClassName="navActive">
                             <i className="fas fa-address-book" />
-                            <span>Contact</span>
+                            <span>À propos</span>
                         </NavLink>
                     </li>
                 </ul>
@@ -42,17 +42,13 @@ const Navigation = () => {
 
             <footer className="social-networks-bubbles">
                 <ul>
-                    {
-                        networksData.map(network => {
-                            return (
-                                <li key={ network.name }>
-                                    <a href={ network.url } target="_blank" rel="noopener noreferrer">
-                                        <i className={ network.icon } />
-                                    </a>
-                                </li>
-                            );
-                        })
-                    }
+                    { networksData.map(network => { return (
+                        <li key={ network.name }>
+                            <a href={ network.url } target="_blank" rel="noopener noreferrer">
+                                <i className={ network.icon } />
+                            </a>
+                        </li>
+                    )})}
                 </ul>
 
                 <div className="signature">

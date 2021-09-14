@@ -1,0 +1,27 @@
+.page__about {
+    .about__content { 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 45% 35%;
+        grid-template-areas:
+          "biography"
+          "contact"
+          "networks";
+    }
+
+    @media screen and (max-width: 500px) {
+      .contact__content {
+        .contact__box {
+          min-width: 100% !important;
+        }
+
+        span {
+          font-size: .9rem !important;
+        }
+
+        h4 {
+          font-size: .9rem;
+        }
+      }
+    }
+}
