@@ -1,16 +1,17 @@
 .sidebar {
+  grid-area: SIDEBAR;
   background: $grey;
-  height: 100%;
-  min-height: $minHeight;
-  width: 400px;
-  position: relative;
+  width: 350px;
+  height: 100vh;
+  position: fixed;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 300px 1fr 100px;
   grid-template-areas:
     "identity"
     "navigation"
-    "bubbles";
+    "bubbles"
+  ;
 
   .identity {
     grid-area: identity;

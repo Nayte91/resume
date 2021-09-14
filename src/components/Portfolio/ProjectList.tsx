@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react"
 import portfolioData from "../../data/portfolioData"
 import ProjectCard from "./ProjectCard"
 
@@ -14,7 +14,7 @@ const ProjectList = () => {
                     <div 
                         className={`selector__button${technology === selectedTechnology ? " selector__button--selected": "" }`} 
                         key={ technology } 
-                        onClick={e => setTechnology(e.currentTarget.innerText)}
+                        onClick={ e => setTechnology(e.currentTarget.innerText) }
                     >
                         <button>{ technology }</button>
                     </div>
