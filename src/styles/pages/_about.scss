@@ -1,12 +1,13 @@
 .page__about {
-    .about__content { 
+    .about__content {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 45% 35%;
+        grid-template-columns: 20% 50% 30%;
+        grid-template-rows: 20% 50% 30%;
         grid-template-areas:
-          "biography"
-          "contact"
-          "networks";
+          ". . ."
+          ". biography contact"
+          ". networks ."
+        ;
     }
 
     @media screen and (max-width: 500px) {

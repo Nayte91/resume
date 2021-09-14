@@ -1,6 +1,6 @@
 const biographyData = {
     title: "Toto",
-    text: "Aime Symfnoy, React, le code élégant. Toujours à la recherche de design patterns."
+    text: "Développeur web depuis 5 ans, solides connaissances en PHP 7 & 8, Symfony 4 & 5, React 17, TypeScript, Docker, REST. Bientôt certifié expert Symfony 6 !"
 }
 
 export default biographyData
