@@ -23,13 +23,8 @@ const ProjectList = () => {
 
             <div className="portfolio__projects">
                 { projects
-                    .filter(project => project.languages.includes(selectedTechnology))
-                    .map( project => { return (
-                        <ProjectCard
-                            key={project.id}
-                            project={project}
-                        />
-                    )})
+                    .filter( project => project.languages.includes(selectedTechnology) )
+                    .map( project => <ProjectCard key={project.id} project={project} /> )
                 }
             </div>
         </>

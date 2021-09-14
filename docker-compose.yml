@@ -11,25 +11,17 @@ services:
     volumes:
       - caddy_data:/data
       - caddy_config:/config
-###> Prod
-#    labels:
-#      traefik.http.routers.resume.rule: Host(`resume.anagraph.org`)
-#    networks:
-#      - proxy
-#      - default
-###< Prod
-###> Dev
-    ports:
-      - 80:80
-###< Dev
+    labels:
+      traefik.http.routers.resume.rule: Host(`resume.anagraph.org`)
+    networks:
+      - proxy
+      - default
 
 volumes:
   caddy_data:
   caddy_config:
 
-###> Prod
-# networks:
-#   default:
-#     external:
-#       name: proxy
-###< Prod
+networks:
+  default:
+    external:
+      name: reverse_proxy_network
