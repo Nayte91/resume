@@ -1,0 +1,12 @@
+@use "../../styles/settings" as *;
+
+.navigation__footer {
+    background-color: $grey;
+
+    .networks__bubbles {
+        display: flex;
+        width: 100%;
+        padding: 0 14px;
+        justify-content: space-evenly;
+    }
+}

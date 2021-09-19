@@ -4,11 +4,10 @@ import { Skill } from "../../types/Skill"
 interface Props {
     skills: Array<Skill>;
     title: string;
-    divId: string;
 }
 
-const ProgressBar: React.FC<Props> = ({ skills = [], title, divId}) => { return (
-    <div id={ divId }>
+const ProgressBar: React.FC<Props> = ({ skills = [], title}) => { return (
+    <section className={`knowledge__${title}`}>
         <h3>{ title }</h3>
         <div className="years">
             <span>Temps</span>
@@ -29,7 +28,7 @@ const ProgressBar: React.FC<Props> = ({ skills = [], title, divId}) => { return 
                 )
             })}
         </div>
-    </div>
+    </section>
 )}
 
 export default ProgressBar

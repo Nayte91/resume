@@ -1,17 +1,16 @@
+@use "../settings" as *;
+
 .page__knowledge {
   .knowledge__content {
     position: relative;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 38% 1fr 1fr;
-    grid-template-rows: 70% 30%;
-    grid-template-areas:
-      "TECH EXP EXP"
-      "MISC MISC HOBBIES";
+    display: flex;
+    // justify-content: start;
+    column-gap: 50px;
 
-    #technologies, #experiences, #miscellaneous, #hobbies {
-        background: $white;
-        padding: .8rem;
+    .knowledge__languages, .knowledge__frameworks, .knowledge__experiences, .knowledge__miscellaneous, .knowledge__hobbies {
+      background: $white;
+      padding: .8rem;
     }
 
     h3 {
@@ -21,93 +20,46 @@
         text-transform: uppercase;
     }
 
-    #technologies {
-      grid-area: TECH;
-      margin-bottom: .5rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-        "LANGUAGES"
-        "FRAMEWORKS";
+    .skill__languages {
+      grid-area: LANGUAGES;
+    }
 
-      #languages {
-        grid-area: LANGUAGES;
-      }
+    .skill__frameworks {
+      grid-area: FRAMEWORKS;
+    }
 
-      #frameworks {
-        grid-area: FRAMEWORKS;
-      }
+    .years {
+      font-size: .65rem;
+      display: flex;
+      justify-content: space-between;
+      color: $grey;
 
-      h3 {
-        margin-bottom: .3rem;
-      }
+      span {
+        width: 36%;
 
-      .years {
-        font-size: .65rem;
-        display: flex;
-        justify-content: space-between;
-        color: $grey;
-
-        span {
-          width: 36%;
-
-          &:nth-child(2) {
-            text-align: center;
-            width: 20%;
-          }
-
-          &:nth-child(3) {
-            text-align: right;
-            width: 44%;
-          }
-
-          &:nth-child(2):before,
-          &:nth-child(3):before {
-            content: '';
-            background: rgba(0, 0.7, 70.4, 0.5);
-            position: absolute;
-            height: 146px;
-            width: 1px;
-            transform: translate(9px, 19px);
-          }
-        }
-      }
-
-      .skill {
-        padding-top: .5rem;
-
-        li {
-          color: $grey;
+        &:nth-child(2) {
+          text-align: center;
+          width: 20%;
         }
 
-        .progress-bar {
-          height: .4rem;
-          background: transparent;
-          border-radius: 50px;
-          margin-top: .2rem;
-          position: relative;
+        &:nth-child(3) {
+          text-align: right;
+          width: 44%;
+        }
 
-          &:after {
-            content: '';
-            position: absolute;
-            background: $yellow;
-            border-radius: 50px;
-            height: .4rem;
-            width: 0;
-            animation: line 2s ease-out forwards;
-
-            @keyframes line {
-              to {
-                width: 100%;
-              }
-            }
-          }
+        &:nth-child(2):before,
+        &:nth-child(3):before {
+          content: '';
+          background: rgba(0, 0.7, 70.4, 0.5);
+          position: absolute;
+          height: 146px;
+          width: 1px;
+          transform: translate(9px, 19px);
         }
       }
     }
 
-    #experiences {
+    .knowledge__experiences {
       grid-area: EXP;
       margin: 0 0 .5rem .5rem;
       display: grid;
@@ -146,11 +98,11 @@
       }
     }
 
-    #miscellaneous {
+    .knowledge__miscellaneous {
       grid-area: MISC;
       margin-right: 0.5rem;
 
-      #miscellaneous-list {
+      .miscellaneous__list {
         display: flex;
         width: 80%;
         height: 100%;
@@ -172,7 +124,7 @@
       }
     }
 
-    #hobbies {
+    .knowledge__hobbies {
       grid-area: HOBBIES;
       padding-left: 1.5rem;
 
@@ -197,12 +149,12 @@
 }
 
 @media screen and (max-width: 950px) {
-  #knowledge-content {
+  .knowledge__content {
     h3 {
       font-size: 1.2rem !important;
     }
 
-    .skill {
+    .knowledge__skill {
       padding-top: .2rem !important;
     }
 
@@ -210,14 +162,14 @@
       font-size: .8rem;
     }
 
-    #miscellaneous, #hobbies {
+    .knowledge__miscellaneous, .knowledge__hobbies {
       font-size: .8rem;
     }
   }
 }
 
 @media screen and (max-width: 850px) {
-  #knowledge-content {
+  .knowledge__content {
     h4 {
       font-size: .9rem !important;
     }
@@ -230,26 +182,26 @@
 }
 
 @media screen and (max-width: 500px) {
-  #knowledge-content {
+  .knowledge__content {
     display: grid !important;
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr 1fr 180px 180px !important;
 
-    #technologies {
+    .knowledge__technologies {
       grid-area: 1 !important;
     }
 
-    #experiences {
+    .knowledge__experiences {
       grid-area: 2 !important;
       margin-left: 0 !important;
     }
 
-    #miscellaneous {
+    .knowledge__miscellaneous {
       grid-area: 3 !important;
       margin-right: 0 !important;
     }
 
-    #hobbies {
+    .knowledge__hobbies {
       grid-area: 4 !important;
       margin-top: .5rem !important;
     }

@@ -1,9 +1,9 @@
 import { miscellaneousFirst, miscellaneousSecond } from "../../data/miscellaneousData"
 
 const Miscellaneous = () => { return (
-    <div id="miscellaneous">
+    <div className="knowledge__miscellaneous">
         <h3>Autres compétences</h3>
-        <div id="miscellaneous-list">
+        <div className="miscellaneous__list">
             <ul>
                 { miscellaneousFirst.map(skill => { return (
                     <li key={ skill }>

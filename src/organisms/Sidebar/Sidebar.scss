@@ -1,0 +1,70 @@
+@use "../../styles/settings" as *;
+
+.sidebar {
+  grid-area: SIDEBAR;
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 1fr 100px;
+  grid-template-areas:
+    "header"
+    "navigation"
+    "footer"
+  ;
+
+  .navigation__header { grid-area: header; }
+  .navigation__menu { 
+    grid-area: navigation;
+    background-color: $grey; 
+  }
+  .navigation__footer { grid-area: footer; }
+}
+
+@media screen and (max-width: 850px) {
+  .sidebar {
+    display: flex;
+    min-height: 50px;
+    margin-bottom: .2rem;
+
+    .identity, .social-networks-bubbles {
+      display: none;
+    }
+
+    .navigation__menu {
+      width: 100%;
+      padding: .1rem 1rem;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          margin-left: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .sidebar {
+    ul {
+      justify-content: space-around !important;
+
+      li {
+        padding: 1rem 0 !important;
+      }
+
+      i {
+        font-size: 1.4rem !important;
+        transform: translateY(-3px) !important;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

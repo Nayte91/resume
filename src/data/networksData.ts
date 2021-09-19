@@ -1,4 +1,6 @@
-const networksData = [
+import Network from "../types/Network"
+
+const networksData: Network[] = [
     {
         name: 'LinkedIn',
         icon: 'fab fa-linkedin',

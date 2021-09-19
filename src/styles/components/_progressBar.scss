@@ -1,0 +1,33 @@
+@use "../settings" as *;
+
+.skill {
+    padding-top: .5rem;
+
+    li {
+        color: $grey;
+    }
+
+    .progress-bar {
+        height: .4rem;
+        background: transparent;
+        border-radius: 50px;
+        margin-top: .2rem;
+        position: relative;
+
+        &:after {
+        content: '';
+        position: absolute;
+        background: $yellow;
+        border-radius: 50px;
+        height: .4rem;
+        width: 0;
+        animation: line 2s ease-out forwards;
+
+        @keyframes line {
+            to {
+                width: 100%;
+            }
+        }
+        }
+    }
+}

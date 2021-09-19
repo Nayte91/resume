@@ -1,0 +1,7 @@
+@use "../../styles/settings" as *;
+
+.home__splash {
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+}

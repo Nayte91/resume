@@ -1,7 +1,7 @@
 import hobbiesData from "../../data/hobbiesData"
 
 const Hobbies = () => { return (
-    <div id="hobbies">
+    <div className="knowledge__hobbies">
         <h3>Intérêts</h3>
         <ul>
             { hobbiesData.map(hobby => { return (

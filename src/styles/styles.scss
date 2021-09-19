@@ -1,12 +1,5 @@
-@import './settings';
-@import "./components/navigation";
-@import "./pages/home";
-@import "./components/presentation";
-@import "./pages/knowledge";
-@import "./pages/portfolio";
-@import "./components/projectCard";
-@import "./pages/about";
-@import "./components/biography";
-@import "./components/contact";
-@import "./components/socialNetworks";
-@import "./pages/notFound";
+@use "./pages/knowledge";
+@use "./components/progressBar";
+@use "./pages/portfolio";
+@use "./components/projectCard";
+@use "./pages/notFound";

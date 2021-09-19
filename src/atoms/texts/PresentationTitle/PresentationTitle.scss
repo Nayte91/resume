@@ -1,0 +1,7 @@
+@use "../../../styles/settings" as *;
+
+.presentation__title {
+    font-size: 5rem;
+    font-weight: $light;
+    color: $white;
+}

@@ -1,24 +1,22 @@
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Home from "./pages/Home";
-import Knowledge from "./pages/Knowledge";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import NotFound from "./pages/NotFound";
+import HomePage from "./pages/HomePage";
+import KnowledgePage from "./pages/KnowledgePage";
+import PortfolioPage from "./pages/PortfolioPage";
+import AboutPage from "./pages/AboutPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
-const App = () => {
-    return (
-        <>
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/competences" component={Knowledge} />
-                    <Route exact path="/portfolio" component={Portfolio} />
-                    <Route exact path="/about" component={About} />
-                    <Route component={NotFound} />
-                </Switch>
-            </BrowserRouter>
-        </>
-    );
-}
+const App = () => (
+    <>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/competences" component={KnowledgePage} />
+                <Route exact path="/portfolio" component={PortfolioPage} />
+                <Route exact path="/about" component={AboutPage} />
+                <Route component={NotFoundPage} />
+            </Switch>
+        </BrowserRouter>
+    </>
+)
 
 export default App;
