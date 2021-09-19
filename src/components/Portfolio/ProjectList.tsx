@@ -1,25 +1,15 @@
 import { useState } from "react"
 import portfolioData from "../../data/portfolioData"
-import ProjectCard from "./ProjectCard"
+import PortfolioSelector from "../../molecules/PortfolioSelector/PortfolioSelector";
+import ProjectCard from "../../molecules/ProjectCard/ProjectCard"
 
 const ProjectList = () => {
     const projects = portfolioData;
     const [selectedTechnology, setTechnology] = useState('PHP');
-    const technologies = ['PHP', 'Symfony', 'Javascript', 'React'];
 
     return (
         <>
-            <nav className="portfolio__selector">
-                { technologies.map( technology => { return (
-                    <div 
-                        className={`selector__button${technology === selectedTechnology ? " selector__button--selected": "" }`} 
-                        key={ technology } 
-                        onClick={ e => setTechnology(e.currentTarget.innerText) }
-                    >
-                        <button>{ technology }</button>
-                    </div>
-                )})}
-            </nav>
+            <PortfolioSelector />
 
             <div className="portfolio__projects">
                 { projects
