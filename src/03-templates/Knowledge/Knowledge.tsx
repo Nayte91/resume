@@ -1,12 +1,12 @@
 import ExperiencesBlock from "../../02-organisms/ExperiencesBlock/ExperiencesBlock"
 import ProgressBlock from "../../02-organisms/ProgressBlock/ProgressBlock"
 import MiscellaneousBlock from "../../02-organisms/MiscellaneousBlock/MiscellaneousBlock"
-import Hobbies from "../../02-organisms/HobbiesBlock/HobbiesBlock"
 import Sidebar from "../../02-organisms/Sidebar/Sidebar"
 import Author from "../../05-types/Author"
 import Network from "../../05-types/Network"
 import Page from "../../05-types/Page"
 import "./Knowledge.scss"
+import HobbiesBlock from "../../02-organisms/HobbiesBlock/HobbiesBlock"
 
 interface KnowledgeProps {
     authorData: Author;
@@ -46,7 +46,7 @@ const Knowledge:React.FC<KnowledgeProps> = ({
             />
             <ExperiencesBlock experiences={experiences} />
             <MiscellaneousBlock miscDataFirst={miscellaneousFirst} miscDataSecond={miscellaneousSecond} />
-            <Hobbies hobbies={hobbies} />
+            <HobbiesBlock hobbies={hobbies} />
         </main>
     </div>
 )

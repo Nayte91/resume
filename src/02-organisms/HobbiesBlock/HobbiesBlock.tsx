@@ -1,4 +1,3 @@
-import React from "react"
 import BlockTitle from "../../00-atoms/texts/BlockTitle/BlockTitle"
 import "./_HobbiesBlock.scss"
 
