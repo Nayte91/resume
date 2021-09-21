@@ -35,9 +35,7 @@ const ProjectModal:React.FC<ProjectModalProps> = ({project, toggle}) => (
 
             <p>{project.info}</p>
 
-            <button className="return" onClick={toggle}>
-                Retourner sur la page
-            </button>
+            <button className="return" onClick={toggle}>Retourner sur la page</button>
         </div>
     </div>
 )

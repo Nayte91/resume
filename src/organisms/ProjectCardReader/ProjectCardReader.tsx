@@ -9,7 +9,7 @@ const ProjectCardReader:React.FC<{project: Project}> = ({project}) => {
 
     return (
         <>
-            <ProjectCard project={project} />
+            <ProjectCard project={project} toggle={toggle} />
             {
                 isInfoShowed && <ProjectModal project={project} toggle={toggle} />
             }
