@@ -11,12 +11,12 @@ interface NavigationFooterProps {
 }
 
 const NavigationFooter:React.FC<NavigationFooterProps> = ({networksData, firstName, lastName, nickName}) => (
-    <footer className="navigation__footer">
+    <>
         <ul className="networks__bubbles">
             { networksData.map( network => <Bubble key={ network.name } network={ network } /> )}
         </ul>
         <Signature firstName={firstName} lastName={lastName} nickName={nickName} />
-    </footer>
+    </>
 )
 
 export default NavigationFooter

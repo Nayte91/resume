@@ -9,12 +9,14 @@ interface NavigationLinkProps {
 }
 
 const NavigationLink: React.FC<NavigationLinkProps> = ({pageData}) => (
-    <li className="navigation__item">
-        <NavLink exact to={ pageData.uri } className="navigation__link" activeClassName="navigation__link--active">
-            <NavigationIcon iconClass={ pageData.icon } />
-            <NavigationPageName pageName={ pageData.name } />
-        </NavLink>
-    </li>
+    <NavLink
+        exact to={pageData.uri}
+        className="navigation__link"
+        activeClassName="navigation__link--active"
+    >
+        <NavigationIcon iconClass={pageData.icon} />
+        <NavigationPageName pageName={pageData.name} />
+    </NavLink>
 )
 
 export default NavigationLink

@@ -1,17 +1,18 @@
+import BlockTitle from "../../atoms/texts/BlockTitle/BlockTitle"
 import hobbiesData from "../../data/hobbiesData"
 
-const Hobbies = () => { return (
+const Hobbies = () => (
     <div className="knowledge__hobbies">
-        <h3>Intérêts</h3>
+        <BlockTitle title="Intérêts" />
         <ul>
-            { hobbiesData.map(hobby => { return (
-                <li className="hobby" key={ hobby.name }>
-                    <i className={ hobby.icon } />
-                    <span>{ hobby.name }</span>
+            {hobbiesData.map(hobby => (
+                <li className="hobby" key={hobby.name}>
+                    <i className={hobby.icon} />
+                    <span>{hobby.name}</span>
                 </li>
-            )})}
+            ))}
         </ul>
     </div>
-)}
+)
 
 export default Hobbies

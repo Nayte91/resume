@@ -1,0 +1,12 @@
+@use "../../styles/settings" as *;
+
+.skill__item {
+    i {
+        color: $grey;
+
+        span {
+            margin-left: 1rem;
+          }
+    }
+    
+}

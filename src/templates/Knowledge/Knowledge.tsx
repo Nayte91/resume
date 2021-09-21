@@ -1,35 +1,47 @@
 import Experiences from "../../components/Knowledge/Experiences"
-import Miscellaneous from "../../components/Knowledge/Miscellaneous"
+import ProgressBlock from "../../organisms/ProgressBlock/ProgressBlock"
+import MiscellaneousBlock from "../../organisms/MiscellaneousBlock/MiscellaneousBlock"
 import Hobbies from "../../components/Knowledge/Hobbies"
-import ProgressBar from "../../components/Knowledge/ProgressBar"
-import { frameworks, languages } from "../../data/technologiesData"
 import Sidebar from "../../organisms/Sidebar/Sidebar"
 import Author from "../../types/Author"
 import Network from "../../types/Network"
 import Page from "../../types/Page"
+import "./Knowledge.scss"
 
 interface KnowledgeProps {
     authorData: Author;
     networksData: Network[];
     pagesData: Page[];
+    languages: any;
+    frameworks: any;
+    miscellaneousFirst: any;
+    miscellaneousSecond: any;
 }
 
-const Knowledge:React.FC<KnowledgeProps> = ({authorData, networksData, pagesData}) => (
+const Knowledge:React.FC<KnowledgeProps> = ({
+    authorData, 
+    networksData, 
+    pagesData, 
+    languages, 
+    frameworks, 
+    miscellaneousFirst, 
+    miscellaneousSecond
+}) => (
     <div className="page__knowledge">
-        <Sidebar authorData={ authorData } networksData={ networksData } pagesData={ pagesData } />
+        <Sidebar authorData={authorData} networksData={networksData} pagesData={pagesData} />
         <main className="knowledge__content">
-            <ProgressBar
+            <ProgressBlock
                 key="languages"
-                skills={ languages }
+                skills={languages}
                 title="languages"
             />
-            <ProgressBar
+            <ProgressBlock
                 key="frameworks"
-                skills={ frameworks }
+                skills={frameworks}
                 title="frameworks"
             />
             <Experiences />
-            <Miscellaneous />
+            <MiscellaneousBlock miscDataFirst={miscellaneousFirst} miscDataSecond={miscellaneousSecond} />
             <Hobbies />
         </main>
     </div>

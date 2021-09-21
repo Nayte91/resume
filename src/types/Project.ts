@@ -1,4 +1,4 @@
-export type Project = {
+type Project = {
     id: number;
     name: string;
     languages: Array<string>;
@@ -8,3 +8,5 @@ export type Project = {
     info: string;
     picture: string;
 }
+
+export default Project

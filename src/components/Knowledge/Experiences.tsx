@@ -1,8 +1,9 @@
+import BlockTitle from "../../atoms/texts/BlockTitle/BlockTitle"
 import experiencesData from "../../data/experiencesData"
 
 const Experiences = () => (
     <div className="knowledge__experiences">
-        <h3>Experiences</h3>
+        <BlockTitle title="Experiences" />
         { experiencesData.map((experience, index) => (
             <div className={`exp-${index+1}`} key={ experience.title }>
                 <h4>{ experience.title }</h4>

@@ -9,12 +9,10 @@ interface NavigationHeaderProps {
 }
 
 const NavigationHeader:React.FC<NavigationHeaderProps> = ({fileName, firstName, lastName}) => (
-    <header className="navigation__header">
-        <div className="identity__content">
-            <IdentityPicture fileName={fileName} />
-            <IdentityName firstName={firstName} lastName={lastName} />
-        </div>
-    </header>
+    <div className="identity__content">
+        <IdentityPicture fileName={fileName} />
+        <IdentityName firstName={firstName} lastName={lastName} />
+    </div>
 )
 
 export default NavigationHeader

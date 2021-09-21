@@ -1,0 +1,19 @@
+@use "../../styles/settings" as *;
+
+.knowledge__miscellaneous {
+    grid-area: MISC;
+    margin-right: 0.5rem;
+
+    .miscellaneous__list {
+      display: flex;
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      justify-content: space-between;
+
+      ul {
+        height: 80%;
+        display: grid;
+      }
+    }
+  }

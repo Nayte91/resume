@@ -1,14 +1,14 @@
-import { NavLink } from "react-router-dom"
+import authorData from "../data/authorData"
+import networksData from "../data/networksData"
+import pagesData from "../data/pagesData"
+import NotFound from "../templates/NotFound/NotFound"
 
 const NotFoundPage = () => (
-    <div className="page__notfound">
-        <main className="notfound__content">
-            <h3>Désolé, cette page n'existe pas !</h3>
-            <NavLink exact to="/" >
-                <i className="fas fa-home"><span>Accueil</span></i>
-            </NavLink>
-        </main>
-    </div>
+    <NotFound 
+        authorData={authorData}
+        networksData={networksData}
+        pagesData={pagesData}
+    />
 )
 
 export default NotFoundPage

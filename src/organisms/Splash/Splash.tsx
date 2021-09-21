@@ -4,16 +4,12 @@ import PresentationTitle from "../../atoms/texts/PresentationTitle/PresentationT
 import Presentation from "../../types/Presentation"
 import "./Splash.scss"
 
-interface SplashProps {
-    presentationData: Presentation;
-}
-
-const Splash:React.FC<SplashProps> = ({presentationData}) => (
-    <article className="home__splash">
-        <PresentationTitle title={ presentationData.title } />
-        <PresentationSubtitle subtitle={ presentationData.subtitle } />
-        <PDFButton pdflink={ presentationData.pdfLink } />
-    </article>
+const Splash:React.FC<{presentationData: Presentation}> = ({presentationData}) => (
+    <section className="home__splash">
+        <PresentationTitle title={presentationData.title} />
+        <PresentationSubtitle subtitle={presentationData.subtitle} />
+        <PDFButton pdflink={presentationData.pdfLink} />
+    </section>
 )
 
 export default Splash

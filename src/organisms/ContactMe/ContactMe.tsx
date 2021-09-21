@@ -7,8 +7,8 @@ import "./ContactMe.scss"
 const ContactMe:React.FC<{authorData:Author}> = ({authorData}) => (
     <section className="about__contact">
         <div className="about__biography">
-            <BlockTitle title="Biographie" />
-            <p>{ authorData.biography }</p>
+            <BlockTitle title="biographie" />
+            <p>{authorData.biography}</p>
         </div>
         <div className="about__links">
             <BlockTitle title="Contactez-moi" />

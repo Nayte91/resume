@@ -1,7 +1,7 @@
 import { useState } from "react"
 import portfolioData from "../../data/portfolioData"
 import PortfolioSelector from "../../molecules/PortfolioSelector/PortfolioSelector";
-import ProjectCard from "../../molecules/ProjectCard/ProjectCard"
+import ProjectCardReader from "../../organisms/ProjectCardReader/ProjectCardReader";
 
 const ProjectList = () => {
     const projects = portfolioData;
@@ -14,7 +14,7 @@ const ProjectList = () => {
             <div className="portfolio__projects">
                 { projects
                     .filter( project => project.languages.includes(selectedTechnology) )
-                    .map( project => <ProjectCard key={project.id} project={project} /> )
+                    .map( project => <ProjectCardReader key={project.id} project={project} /> )
                 }
             </div>
         </>

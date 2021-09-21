@@ -14,11 +14,24 @@
     "footer"
   ;
 
-  .navigation__header { grid-area: header; }
+  .navigation__header {
+    @include flexCenter;
+    grid-area: header;
+    text-align: center;
+    user-select: none;
+    background-color: $white;
+  }
+
   .navigation__menu { 
     grid-area: navigation;
     background-color: $grey; 
+
+    li.navigation__item {
+      font-size: 1.3rem;
+      transition: 0.2s ease;
+    }
   }
+  
   .navigation__footer { grid-area: footer; }
 }
 

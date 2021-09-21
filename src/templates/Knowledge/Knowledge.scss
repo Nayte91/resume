@@ -1,4 +1,4 @@
-@use "../settings" as *;
+@use "../../styles/settings" as *;
 
 .page__knowledge {
   .knowledge__content {
@@ -13,51 +13,9 @@
       padding: .8rem;
     }
 
-    h3 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-        color: $grey;
-        text-transform: uppercase;
-    }
+    .skill__languages { grid-area: LANGUAGES; }
 
-    .skill__languages {
-      grid-area: LANGUAGES;
-    }
-
-    .skill__frameworks {
-      grid-area: FRAMEWORKS;
-    }
-
-    .years {
-      font-size: .65rem;
-      display: flex;
-      justify-content: space-between;
-      color: $grey;
-
-      span {
-        width: 36%;
-
-        &:nth-child(2) {
-          text-align: center;
-          width: 20%;
-        }
-
-        &:nth-child(3) {
-          text-align: right;
-          width: 44%;
-        }
-
-        &:nth-child(2):before,
-        &:nth-child(3):before {
-          content: '';
-          background: rgba(0, 0.7, 70.4, 0.5);
-          position: absolute;
-          height: 146px;
-          width: 1px;
-          transform: translate(9px, 19px);
-        }
-      }
-    }
+    .skill__frameworks { grid-area: FRAMEWORKS; }
 
     .knowledge__experiences {
       grid-area: EXP;
@@ -95,32 +53,6 @@
 
       .exp-2 {
         grid-area: 3;
-      }
-    }
-
-    .knowledge__miscellaneous {
-      grid-area: MISC;
-      margin-right: 0.5rem;
-
-      .miscellaneous__list {
-        display: flex;
-        width: 80%;
-        height: 100%;
-        margin: 0 auto;
-        justify-content: space-between;
-
-        ul {
-          height: 80%;
-          display: grid;
-
-          i {
-            color: $grey;
-
-            span {
-              margin-left: 1rem;
-            }
-          }
-        }
       }
     }
 

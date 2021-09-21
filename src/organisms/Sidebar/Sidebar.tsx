@@ -14,11 +14,19 @@ interface SidebarProps {
 
 const Sidebar:React.FC<SidebarProps> = ({authorData, networksData, pagesData}) => (
     <aside className="sidebar">
-        <NavigationHeader fileName={authorData.picture} firstName={authorData.firstName} lastName={authorData.lastName} />
+        <header className="navigation__header">
+            <NavigationHeader fileName={authorData.picture} firstName={authorData.firstName} lastName={authorData.lastName} />
+        </header>
         <nav className="navigation__menu">
-            {pagesData.map(pageData => <NavigationLink key={pageData.name} pageData={pageData} />)}
+            {pagesData.map(pageData => (
+                <li className="navigation__item">
+                    <NavigationLink key={pageData.name} pageData={pageData} />
+                </li>
+            ))}
         </nav>
-        <NavigationFooter networksData={networksData} firstName={authorData.firstName} lastName={authorData.lastName} nickName={authorData.nickName} />
+        <footer className="navigation__footer">
+            <NavigationFooter networksData={networksData} firstName={authorData.firstName} lastName={authorData.lastName} nickName={authorData.nickName} />
+        </footer>
     </aside>
 )
 
