@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import NavigationIcon from "../../00-atoms/images/NavigationIcon/NavigationIcon"
 import NavigationPageName from "../../00-atoms/texts/NavigationPageName/NavigationPageName"
 import Page from "../../05-types/Page"
-import "./NavigationLink.scss"
+import "./_NavigationLink.scss"
 
 interface NavigationLinkProps {
     pageData: Page;

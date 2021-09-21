@@ -1,4 +1,4 @@
-import "./ProgressBar.scss"
+import "./_ProgressBar.scss"
 
 const ProgressBar:React.FC<{item:any}> = ({item}) => {
     let xpYears = 2

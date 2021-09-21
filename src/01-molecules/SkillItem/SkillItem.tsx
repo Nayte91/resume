@@ -1,4 +1,4 @@
-import "./SkillItem.scss"
+import "./_SkillItem.scss"
 
 const SkillItem:React.FC<{skill:string}> = ({skill}) => (
     <li className="skill__item">

@@ -1,8 +1,8 @@
 import React from "react"
 import BlockTitle from "../../00-atoms/texts/BlockTitle/BlockTitle"
-import "./Hobbies.scss"
+import "./_HobbiesBlock.scss"
 
-const Hobbies:React.FC<{hobbies:any[]}> = ({hobbies}) => (
+const HobbiesBlock:React.FC<{hobbies:any[]}> = ({hobbies}) => (
     <div className="knowledge__hobbies">
         <BlockTitle title="Intérêts" />
         <ul>
@@ -16,4 +16,4 @@ const Hobbies:React.FC<{hobbies:any[]}> = ({hobbies}) => (
     </div>
 )
 
-export default Hobbies
+export default HobbiesBlock

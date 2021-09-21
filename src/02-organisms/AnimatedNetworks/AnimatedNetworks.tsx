@@ -1,6 +1,6 @@
 import SocialNetworkCard from "../../01-molecules/SocialNetworkCard/SocialNetworkCard"
 import Network from "../../05-types/Network"
-import "./AnimatedNetworks.scss"
+import "./_AnimatedNetworks.scss"
 
 const AnimatedNetworks:React.FC<{networks:Network[]}> = ({networks}) => (
     <section className="about__socialNetworks">

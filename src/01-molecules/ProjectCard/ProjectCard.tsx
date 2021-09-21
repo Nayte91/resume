@@ -1,6 +1,6 @@
 import BlockTitle from '../../00-atoms/texts/BlockTitle/BlockTitle';
 import Project from "../../05-types/Project"
-import "./ProjectCard.scss"
+import "./_ProjectCard.scss"
 
 interface ProjectCardProps {
     project:Project;

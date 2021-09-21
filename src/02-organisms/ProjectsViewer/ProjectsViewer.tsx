@@ -2,7 +2,7 @@ import { useState } from "react"
 import TechnologySelector from "../../01-molecules/TechnologySelector/TechnologySelector";
 import Project from "../../05-types/Project";
 import ProjectCardReader from "../ProjectCardReader/ProjectCardReader";
-import "./ProjectsViewer.scss"
+import "./_ProjectsViewer.scss"
 
 interface ProjectsViewerProps {
     projects: Project[];

@@ -1,5 +1,5 @@
 import Project from "../../05-types/Project"
-import "./ProjectModal.scss"
+import "./_ProjectModal.scss"
 
 interface ProjectModalProps {
     project: Project;

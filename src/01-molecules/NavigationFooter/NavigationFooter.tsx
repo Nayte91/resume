@@ -1,7 +1,7 @@
 import Bubble from "../../00-atoms/buttons/Bubble/Bubble";
 import Signature from "../../00-atoms/texts/Signature/Signature";
 import Network from "../../05-types/Network";
-import "./NavigationFooter.scss";
+import "./_NavigationFooter.scss";
 
 interface NavigationFooterProps {
     networksData: Network[];

@@ -1,5 +1,5 @@
 import Network from "../../../05-types/Network";
-import "./Bubble.scss";
+import "./_Bubble.scss";
 
 const Bubble: React.FC<{network:Network}> = ({ network }) => (
     <li key={ network.name } className="network__bubble">

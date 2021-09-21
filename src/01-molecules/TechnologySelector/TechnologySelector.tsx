@@ -1,4 +1,4 @@
-import "./TechnologySelector.scss"
+import "./_TechnologySelector.scss"
 
 interface TechnologySelectorProps {
     technologies: string[];

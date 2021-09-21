@@ -1,6 +1,6 @@
 import BlockTitle from "../../00-atoms/texts/BlockTitle/BlockTitle"
 
-const Experiences:React.FC<{experiences:any[]}> = ({experiences}) => (
+const ExperiencesBlock:React.FC<{experiences:any[]}> = ({experiences}) => (
     <div className="knowledge__experiences">
         <BlockTitle title="Experiences" />
         { experiences.map((experience, index) => (
@@ -13,4 +13,4 @@ const Experiences:React.FC<{experiences:any[]}> = ({experiences}) => (
     </div>
 )
 
-export default Experiences
+export default ExperiencesBlock

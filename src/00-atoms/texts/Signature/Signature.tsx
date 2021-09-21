@@ -1,4 +1,4 @@
-import "./Signature.scss";
+import "./_Signature.scss";
 
 interface SignatureProps {
     firstName: string;

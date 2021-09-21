@@ -1,7 +1,7 @@
-import Experiences from "../../02-organisms/Experiences/Experiences"
+import ExperiencesBlock from "../../02-organisms/ExperiencesBlock/ExperiencesBlock"
 import ProgressBlock from "../../02-organisms/ProgressBlock/ProgressBlock"
 import MiscellaneousBlock from "../../02-organisms/MiscellaneousBlock/MiscellaneousBlock"
-import Hobbies from "../../02-organisms/Hobbies/Hobbies"
+import Hobbies from "../../02-organisms/HobbiesBlock/HobbiesBlock"
 import Sidebar from "../../02-organisms/Sidebar/Sidebar"
 import Author from "../../05-types/Author"
 import Network from "../../05-types/Network"
@@ -44,7 +44,7 @@ const Knowledge:React.FC<KnowledgeProps> = ({
                 skills={frameworks}
                 title="frameworks"
             />
-            <Experiences experiences={experiences} />
+            <ExperiencesBlock experiences={experiences} />
             <MiscellaneousBlock miscDataFirst={miscellaneousFirst} miscDataSecond={miscellaneousSecond} />
             <Hobbies hobbies={hobbies} />
         </main>

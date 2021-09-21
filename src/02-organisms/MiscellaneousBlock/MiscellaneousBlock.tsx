@@ -1,6 +1,6 @@
 import BlockTitle from "../../00-atoms/texts/BlockTitle/BlockTitle"
 import SkillItem from "../../01-molecules/SkillItem/SkillItem"
-import "./MiscellaneousBlock.scss"
+import "./_MiscellaneousBlock.scss"
 
 interface MiscellaneousBlockProps {
     miscDataFirst: any[];

@@ -1,5 +1,5 @@
 import Network from "../../05-types/Network"
-import "./SocialNetworkCard.scss"
+import "./_SocialNetworkCard.scss"
 
 const SocialNetworkCard: React.FC<{network:Network}> = ({ network }) => (
     <div className="socialNetwork__card">

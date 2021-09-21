@@ -1,4 +1,4 @@
-import "./NavigationPageName.scss"
+import "./_NavigationPageName.scss"
 
 const NavigationPageName: React.FC<{pageName: string}> = ({pageName}) => <span className="navigation__pageName">{pageName}</span>
 

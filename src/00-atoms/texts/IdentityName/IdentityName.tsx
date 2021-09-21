@@ -1,4 +1,4 @@
-import "./IdentityName.scss";
+import "./_IdentityName.scss";
 
 interface IdentityNameProps {
     firstName: string;

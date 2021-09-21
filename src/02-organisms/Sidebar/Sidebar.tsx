@@ -4,7 +4,7 @@ import NavigationLink from "../../01-molecules/NavigationLink/NavigationLink"
 import Author from "../../05-types/Author"
 import Network from "../../05-types/Network"
 import Page from "../../05-types/Page"
-import "./Sidebar.scss"
+import "./_Sidebar.scss"
 
 interface SidebarProps {
     authorData: Author;

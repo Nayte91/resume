@@ -2,7 +2,7 @@ import React from 'react'
 import BlockTitle from '../../00-atoms/texts/BlockTitle/BlockTitle';
 import ProgressBar from '../../01-molecules/ProgressBar/ProgressBar';
 import { Skill } from "../../05-types/Skill"
-import "./ProgressBlock.scss"
+import "./_ProgressBlock.scss"
 
 interface Props {
     skills: Skill[];

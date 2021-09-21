@@ -2,7 +2,7 @@ import {CopyToClipboard} from "react-copy-to-clipboard"
 import ContactIcon from "../../00-atoms/images/ContactIcon/ContactIcon"
 import BlockTitle from "../../00-atoms/texts/BlockTitle/BlockTitle"
 import Author from "../../05-types/Author"
-import "./ContactMe.scss"
+import "./_ContactMe.scss"
 
 const ContactMe:React.FC<{authorData:Author}> = ({authorData}) => (
     <section className="contact">

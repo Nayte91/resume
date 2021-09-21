@@ -1,6 +1,6 @@
 import IdentityName from "../../00-atoms/texts/IdentityName/IdentityName";
 import IdentityPicture from "../../00-atoms/images/IdentityPicture/IdentityPicture";
-import "./NavigationHeader.scss"
+import "./_NavigationHeader.scss"
 
 interface NavigationHeaderProps {
     fileName: string;
