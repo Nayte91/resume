@@ -4,6 +4,8 @@ import networksData from "../data/networksData"
 import pagesData from "../data/pagesData"
 import {frameworks, languages} from "../data/technologiesData"
 import {miscellaneousFirst, miscellaneousSecond} from "../data/miscellaneousData"
+import hobbiesData from "../data/hobbiesData"
+import experiencesData from "../data/experiencesData"
 
 const KnowledgePage = () => (
     <Knowledge 
@@ -14,6 +16,8 @@ const KnowledgePage = () => (
         frameworks={frameworks}
         miscellaneousFirst={miscellaneousFirst}
         miscellaneousSecond={miscellaneousSecond}
+        hobbies={hobbiesData}
+        experiences={experiencesData}
     />
 )
 

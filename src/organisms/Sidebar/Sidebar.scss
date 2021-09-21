@@ -22,11 +22,11 @@
     background-color: $white;
   }
 
-  .navigation__menu { 
+  menu { 
     grid-area: navigation;
     background-color: $grey; 
 
-    li.navigation__item {
+    li {
       font-size: 1.3rem;
       transition: 0.2s ease;
     }
@@ -45,11 +45,11 @@
       display: none;
     }
 
-    .navigation__menu {
+    menu {
       width: 100%;
       padding: .1rem 1rem;
 
-      ul {
+      li {
         display: flex;
         justify-content: space-between;
 

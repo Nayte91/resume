@@ -1,4 +1,4 @@
-@use "../settings" as *;
+@use "../../styles/settings" as *;
 
 .project {
     background: $white;
@@ -6,7 +6,7 @@
     width: 32%;
     max-height: 50%;
     display: grid;
-    grid-template-rows: 1fr 1px 20% 60%;
+    grid-template-rows: 1fr 1px 25% 70%;
     grid-template-areas:
         "title"
         "break"
@@ -24,12 +24,9 @@
         }
     }
     
-    .project__title {
+    h2 {
         @include flexCenter;
         grid-area: title;
-        font-size: 2rem;
-        font-weight: $light;
-        color: $grey;
     }
 
     .project__break {
@@ -40,7 +37,7 @@
         margin: auto;
     }
     
-    .project__picture {
+    img {
         @include flexCenter;
         grid-area: picture;
         object-fit: cover;
@@ -54,4 +51,3 @@
         }
     }
 }
-

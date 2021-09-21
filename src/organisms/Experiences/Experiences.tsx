@@ -1,10 +1,9 @@
 import BlockTitle from "../../atoms/texts/BlockTitle/BlockTitle"
-import experiencesData from "../../data/experiencesData"
 
-const Experiences = () => (
+const Experiences:React.FC<{experiences:any[]}> = ({experiences}) => (
     <div className="knowledge__experiences">
         <BlockTitle title="Experiences" />
-        { experiencesData.map((experience, index) => (
+        { experiences.map((experience, index) => (
             <div className={`exp-${index+1}`} key={ experience.title }>
                 <h4>{ experience.title }</h4>
                 <h5>{ experience.date }</h5>

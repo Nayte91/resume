@@ -1,7 +1,7 @@
-import Experiences from "../../components/Knowledge/Experiences"
+import Experiences from "../../organisms/Experiences/Experiences"
 import ProgressBlock from "../../organisms/ProgressBlock/ProgressBlock"
 import MiscellaneousBlock from "../../organisms/MiscellaneousBlock/MiscellaneousBlock"
-import Hobbies from "../../components/Knowledge/Hobbies"
+import Hobbies from "../../organisms/Hobbies/Hobbies"
 import Sidebar from "../../organisms/Sidebar/Sidebar"
 import Author from "../../types/Author"
 import Network from "../../types/Network"
@@ -16,6 +16,8 @@ interface KnowledgeProps {
     frameworks: any;
     miscellaneousFirst: any;
     miscellaneousSecond: any;
+    hobbies: any[];
+    experiences: any[];
 }
 
 const Knowledge:React.FC<KnowledgeProps> = ({
@@ -25,7 +27,9 @@ const Knowledge:React.FC<KnowledgeProps> = ({
     languages, 
     frameworks, 
     miscellaneousFirst, 
-    miscellaneousSecond
+    miscellaneousSecond,
+    hobbies,
+    experiences
 }) => (
     <div className="page__knowledge">
         <Sidebar authorData={authorData} networksData={networksData} pagesData={pagesData} />
@@ -40,9 +44,9 @@ const Knowledge:React.FC<KnowledgeProps> = ({
                 skills={frameworks}
                 title="frameworks"
             />
-            <Experiences />
+            <Experiences experiences={experiences} />
             <MiscellaneousBlock miscDataFirst={miscellaneousFirst} miscDataSecond={miscellaneousSecond} />
-            <Hobbies />
+            <Hobbies hobbies={hobbies} />
         </main>
     </div>
 )

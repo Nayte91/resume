@@ -1,11 +1,12 @@
+import React from "react"
 import BlockTitle from "../../atoms/texts/BlockTitle/BlockTitle"
-import hobbiesData from "../../data/hobbiesData"
+import "./Hobbies.scss"
 
-const Hobbies = () => (
+const Hobbies:React.FC<{hobbies:any[]}> = ({hobbies}) => (
     <div className="knowledge__hobbies">
         <BlockTitle title="Intérêts" />
         <ul>
-            {hobbiesData.map(hobby => (
+            {hobbies.map(hobby => (
                 <li className="hobby" key={hobby.name}>
                     <i className={hobby.icon} />
                     <span>{hobby.name}</span>

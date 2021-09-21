@@ -1,0 +1,87 @@
+@use "../../styles/settings" as *;
+
+.page__portfolio {
+    .portfolio__content {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 95%;
+        grid-template-rows: 150px 1fr;
+        grid-template-areas:
+          "selector"
+          "projects";
+
+        .portfolio__selector {
+            grid-area: selector;
+            display: flex;
+            width: 100%;
+            margin: 2rem auto;
+            background: $white;
+            
+            .selector__button {
+                @include flexCenter;
+                color: $grey;
+                font-size: 1.5rem;
+                font-weight: $bold;
+                padding: 0 1rem;
+                flex: 1;
+                z-index: 2;
+                cursor: pointer;
+                transition: 0.2s ease;
+
+                button {
+                    background: none;
+                    color: inherit;
+                    border: none;
+                    font: inherit;
+                    cursor: pointer;
+                    position: relative;
+                }
+            }
+
+            .selector__button--selected {
+              background-color: $yellow;
+            }
+        }
+        
+        .portfolio__projects {
+            grid-area: projects;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 650px) and (min-width: 521px) {
+  .portfolio__content {
+    .project {
+      width: 49% !important;
+
+      i {
+        font-size: 1rem;
+      }
+    }
+    .info-content {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+    .portfolio__selector {
+        display: none !important;
+    }
+    .portfolio__content {
+        grid-template-rows: 1fr !important;
+
+        .project {
+            grid-template-rows: 30px 40px 80px 40px !important;
+            width: 98% !important;
+
+            img {
+                height: 100% !important;
+            }
+        }
+    }
+}

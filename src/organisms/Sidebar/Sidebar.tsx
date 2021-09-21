@@ -17,13 +17,13 @@ const Sidebar:React.FC<SidebarProps> = ({authorData, networksData, pagesData}) =
         <header className="navigation__header">
             <NavigationHeader fileName={authorData.picture} firstName={authorData.firstName} lastName={authorData.lastName} />
         </header>
-        <nav className="navigation__menu">
+        <menu>
             {pagesData.map(pageData => (
-                <li className="navigation__item">
-                    <NavigationLink key={pageData.name} pageData={pageData} />
+                <li key={pageData.name}>
+                    <NavigationLink pageData={pageData} />
                 </li>
             ))}
-        </nav>
+        </menu>
         <footer className="navigation__footer">
             <NavigationFooter networksData={networksData} firstName={authorData.firstName} lastName={authorData.lastName} nickName={authorData.nickName} />
         </footer>

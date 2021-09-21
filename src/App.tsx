@@ -6,17 +6,15 @@ import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 const App = () => (
-    <>
-        <BrowserRouter>
-            <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/competences" component={KnowledgePage} />
-                <Route exact path="/portfolio" component={PortfolioPage} />
-                <Route exact path="/about" component={AboutPage} />
-                <Route component={NotFoundPage} />
-            </Switch>
-        </BrowserRouter>
-    </>
+    <BrowserRouter>
+        <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/competences" component={KnowledgePage} />
+            <Route exact path="/portfolio" component={PortfolioPage} />
+            <Route exact path="/about" component={AboutPage} />
+            <Route component={NotFoundPage} />
+        </Switch>
+    </BrowserRouter>
 )
 
 export default App;
