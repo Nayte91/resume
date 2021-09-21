@@ -1,0 +1,24 @@
+@use "../../07-styles/settings" as *;
+
+.page__notfound {
+    .notfound__content {
+        section {
+            @include flexCenter;
+            text-align: center;
+    
+            h3 {
+                margin-bottom: 3rem;
+                font-size: 2rem;
+            }
+            
+            a {
+                padding: 1rem 2rem;
+                background: $white;
+                transition: .2s;
+                span {
+                    padding-left: .5rem;
+                }
+            }
+        } 
+    }
+}

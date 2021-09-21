@@ -1,9 +1,9 @@
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import KnowledgePage from "./pages/KnowledgePage";
-import PortfolioPage from "./pages/PortfolioPage";
-import AboutPage from "./pages/AboutPage";
-import NotFoundPage from "./pages/NotFoundPage";
+import HomePage from "./04-pages/HomePage";
+import KnowledgePage from "./04-pages/KnowledgePage";
+import PortfolioPage from "./04-pages/PortfolioPage";
+import AboutPage from "./04-pages/AboutPage";
+import NotFoundPage from "./04-pages/NotFoundPage";
 
 const App = () => (
     <BrowserRouter>

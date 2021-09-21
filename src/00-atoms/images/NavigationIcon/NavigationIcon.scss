@@ -1,0 +1,10 @@
+@use "../../../07-styles/settings" as *;
+
+.navigation__icon {
+  display: block;
+  padding: 1rem;
+  position: absolute;
+  font-size: 1.5rem;
+  transform: translateY(3px);
+  transition: .2s ease;
+}

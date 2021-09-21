@@ -1,0 +1,8 @@
+@use "../../../07-styles/settings" as *;
+
+.presentation_subtitle {
+    font-size: 3rem;
+    font-weight: $light;
+    color: $white;
+    margin: 1.5rem;
+}

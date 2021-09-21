@@ -1,0 +1,33 @@
+@use "../../07-styles/settings" as *;
+
+.progress__bar {
+    padding-top: .5rem;
+
+    h6 {
+        color: $grey;
+    }
+
+    figure {
+        height: .4rem;
+        background: transparent;
+        border-radius: 50px;
+        margin-top: .2rem;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: $yellow;
+            border-radius: 50px;
+            height: .4rem;
+            width: 0;
+            animation: line 2s ease-out forwards;
+
+            @keyframes line {
+                to {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
