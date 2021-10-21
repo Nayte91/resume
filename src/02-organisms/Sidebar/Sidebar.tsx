@@ -17,6 +17,7 @@ const Sidebar:React.FC<SidebarProps> = ({authorData, networksData, pagesData}) =
         <header className="navigation__header">
             <NavigationHeader fileName={authorData.picture} firstName={authorData.firstName} lastName={authorData.lastName} />
         </header>
+
         <menu>
             {pagesData.map(pageData => (
                 <li key={pageData.name}>
@@ -24,6 +25,7 @@ const Sidebar:React.FC<SidebarProps> = ({authorData, networksData, pagesData}) =
                 </li>
             ))}
         </menu>
+        
         <footer className="navigation__footer">
             <NavigationFooter networksData={networksData} firstName={authorData.firstName} lastName={authorData.lastName} nickName={authorData.nickName} />
         </footer>
